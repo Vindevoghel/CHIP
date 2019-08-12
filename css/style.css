@@ -1,4 +1,16 @@
 /* algemene style sheet waarin de partials in komen*/
+/* positions h1 in center of carousel */
+#carouseldiv {
+  z-index: -1;
+  position: relative; }
+
+#carousel-h1 {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
 .container-fluid-events {
   padding: 0;
   background-image: url("http://wowslider.com/sliders/demo-18/data1/images/shanghai.jpg");
@@ -7,14 +19,14 @@
   background-repeat: no-repeat;
   background-size: cover; }
 
-.nav {
-  height: 50px; }
-
-.parallax {
-  height: 400px; }
+.parallaxevents {
+  height: auto; }
 
 .parafree {
   height: 450px; }
+
+.parafreetop {
+  height: 280px; }
 
 #demo {
   font-size: 70px;
@@ -22,6 +34,7 @@
   color: white; }
 
 .timer {
-  color: white; }
+  color: white;
+  height: auto; }
 
 /*# sourceMappingURL=style.css.map */
