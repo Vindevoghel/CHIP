@@ -1,4 +1,18 @@
 /* algemene style sheet waarin de partials in komen*/
+.main-container {
+  padding-top: 50px; }
+
+.hero-image {
+  background-image: url("../assets/adult-artificial-intelligence-bot-1020325.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 500px; }
+
+.hero-text {
+  text-align: center; }
+
 /* positions h1 in center of carousel */
 #carouseldiv {
   z-index: -1;
