@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <title>CHIP events</title>
+</head>
+<body>
+<div class="container-fluid-events">
+
+    <!-- nav bar START -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand"> <img src="assets/robot-icon%2064px.png"></a>
+        <div class="collapse navbar-collapse" id="collapse_target">
+            <span class="navbar-text"> CHIP </span>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">HOME</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target"
+                       href="#">ABOUT</a>
+                    <span class="caret"></span>
+                    <div class="dropdown-menu" aria-labelledby="dropdown_target">
+                        <ul class="navbar-nav">
+                            <a class="dropdown-item"> TECH </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item"> PEOPLE </a>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">EVENT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+    <!-- nav bar END -->
+
+
+
+
+
+
+    <!-- blank div for parallax -->
+<div class="parafree">
+    <p id="demo"></p> <!-- COUNT DOWN TIMER -->
+    <div class="timer position-relative overflow-hidden text-center">
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+            <h1 class="display-4 font-weight-normal">Launch Event</h1>
+            <p class="lead font-weight-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts
+                with this example based on Apple’s marketing pages.</p>
+            <a class="btn btn-primary" href="#">Coming soon</a>
+        </div>
+        <div class="product-device shadow-sm d-none d-md-block"></div>
+        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+
+    </div>
+
+
+
+
+</div>
+    <!-- blank div for parallax END-->
+
+
+    <!-- Events info container -->
+    <div class="parallax position-relative overflow-hidden text-center bg-light">
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+
+            <h1 class="display-4 font-weight-normal">Event Info</h1>
+            <p class="lead font-weight-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts
+                with this example based on Apple’s marketing pages.</p>
+            <a class="btn btn-outline-secondary" href="#">Coming soon</a>
+        </div>
+        <div class="product-device shadow-sm d-none d-md-block"></div>
+        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+    </div>
+    <!-- Events info container END -->
+
+
+
+    <div class="parafree"></div>   <!-- blank div for parallax -->
+
+
+
+    <!-- Events google maps & calendar -->
+    <div class="2cols position-relative overflow-hidden text-center bg-light">
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+            <h1 class="display-4 font-weight-normal">Location and stuff</h1>
+            <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+                <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                    <div class="my-3 p-3">
+                        <h2 class="display-5">Another headline</h2>
+                        <p class="lead">And an even wittier subheading.</p>
+                    </div>
+                    <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+                </div>
+                <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                    <div class="my-3 py-3">
+                        <h2 class="display-5">Another headline</h2>
+                        <p class="lead">And an even wittier subheading.</p>
+                    </div>
+                    <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="product-device shadow-sm d-none d-md-block"></div>
+        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+    </div>
+
+    <!-- Events google maps & calendar END-->
+
+</div>
+
+
+
+
+
+
+<nav class="nav bg-dark">
+</nav>     <!-- footer bar place -->
+
+
+
+
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Aug 15, 2019 15:37:25").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="demo"
+        document.getElementById("demo").innerHTML = days + " days " + hours + " hours "
+            + minutes + "minutes " + seconds + " seconds ";
+
+        // If the count down is over, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+</script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
