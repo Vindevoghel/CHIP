@@ -1,5 +1,8 @@
 .navbar{
-  background-color: #312F30;
+  background-color:$basecolor;
+}
+footer{
+  background-color:$basecolor;
 }
 h1{
   color: $h1color;
@@ -39,8 +42,12 @@ background-color: $button;
   padding-top: 150px;
 }
 .aboutsection{
-  background-color: white;
+  background-color: $white;
   padding-bottom: 300px;
+}
+.eventsection{
+  background-color: $white;
+  padding-bottom: 200px;
 }
 
 .cardtech{
@@ -70,14 +77,10 @@ background-color: $button;
 .parallax-event{
   height: 200px;
 }
-.eventsection{
-  background-color: white;
-  padding-bottom: 200px;
-}
-
 footer{
   background-color: #1b1e21;
   color: white;
+  position: relative;
 }
 footer ul {
   text-decoration: none;
@@ -86,6 +89,12 @@ footer ul {
 
 footer ul li {
   display: inline-block;
+  padding: 10px;
+}
+footer ul li .top{
+  position:absolute;
+  right: 50px;
+
 }
 .icon{
   display: flex;
@@ -103,4 +112,5 @@ footer ul li {
 .icon a{
 text-decoration: none;
 }
+
 
