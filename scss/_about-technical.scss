@@ -11,8 +11,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  color: antiquewhite;
-}
+  }
 
 /*removes scrollbar caused by 0padding containers*/
 
@@ -23,14 +22,21 @@
 /*adds margins to about page text-boxes and images */
 
 .main-text-box {
-  max-width: 600px;
+  max-width: 320px;
   background-color: grey;
 }
 
 .about-image {
-  max-width: 600px;
+  max-width: 320px;
 }
 
 .about-row {
-  margin: 50px 50px;
+  margin: 50px auto;
+}
+
+/* adds background to about tech */
+
+#mainabout {
+  background: -webkit-radial-gradient(rgb(44, 44, 44), rgb(26, 26, 26));
+  background: radial-gradient(rgb(44, 44, 44), rgb(26, 26, 26));
 }

@@ -110,6 +110,9 @@ footer ul li .top {
 .icon a {
   text-decoration: none; }
 
+audio {
+  background-color: #312F30; }
+
 /* positions h1 in center of carousel */
 #carouseldiv {
   z-index: -1;
@@ -120,8 +123,7 @@ footer ul li .top {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  color: antiquewhite; }
+  transform: translate(-50%, -50%); }
 
 /*removes scrollbar caused by 0padding containers*/
 .carouselcontainer, .aboutcontainer {
@@ -129,14 +131,19 @@ footer ul li .top {
 
 /*adds margins to about page text-boxes and images */
 .main-text-box {
-  max-width: 600px;
+  max-width: 320px;
   background-color: grey; }
 
 .about-image {
-  max-width: 600px; }
+  max-width: 320px; }
 
 .about-row {
-  margin: 50px 50px; }
+  margin: 50px auto; }
+
+/* adds background to about tech */
+#mainabout {
+  background: -webkit-radial-gradient(#2c2c2c, #1a1a1a);
+  background: radial-gradient(#2c2c2c, #1a1a1a); }
 
 #carouseldiv {
   z-index: -1;
@@ -147,8 +154,7 @@ footer ul li .top {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  color: antiquewhite; }
+  transform: translate(-50%, -50%); }
 
 /*removes scrollbar caused by 0padding containers*/
 .carouselcontainer, .aboutcontainer {
@@ -165,9 +171,6 @@ footer ul li .top {
 .about-row {
   margin: 50px 50px; }
 
-.space {
-  margin: 35%; }
-
 .container-fluid-events {
   padding: 0;
   background-image: url("http://wowslider.com/sliders/demo-18/data1/images/shanghai.jpg");
@@ -183,7 +186,7 @@ footer ul li .top {
   height: 450px; }
 
 #demo {
-  font-size: 70px;
+  font-size: 50px;
   text-align: center;
   color: white; }
 
@@ -208,10 +211,5 @@ footer ul li .top {
   height: 100%;
   width: 100%;
   position: absolute; }
-
-.extrainfoevents {
-  position: relative;
-  left: 0;
-  top: 10px; }
 
 /*# sourceMappingURL=style.css.map */
