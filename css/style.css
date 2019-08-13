@@ -6,6 +6,9 @@
 .navbar {
   background-color: #312F30; }
 
+footer {
+  background-color: #312F30; }
+
 h1 {
   color: #8C7468; }
 
@@ -43,8 +46,12 @@ h5 {
   padding-top: 150px; }
 
 .aboutsection {
-  background-color: white;
+  background-color: rgba(246, 246, 246, 0.7);
   padding-bottom: 300px; }
+
+.eventsection {
+  background-color: rgba(246, 246, 246, 0.7);
+  padding-bottom: 200px; }
 
 .cardtech {
   margin-top: 50px; }
@@ -71,20 +78,22 @@ h5 {
 .parallax-event {
   height: 200px; }
 
-.eventsection {
-  background-color: white;
-  padding-bottom: 200px; }
-
 footer {
   background-color: #1b1e21;
-  color: white; }
+  color: white;
+  position: relative; }
 
 footer ul {
   text-decoration: none;
   width: 100%; }
 
 footer ul li {
-  display: inline-block; }
+  display: inline-block;
+  padding: 10px; }
+
+footer ul li .top {
+  position: absolute;
+  right: 50px; }
 
 .icon {
   display: flex;
