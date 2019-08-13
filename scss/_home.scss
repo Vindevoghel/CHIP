@@ -1,3 +1,32 @@
+.navbar{
+  background-color: #312F30;
+}
+h1{
+  color: $h1color;
+}
+h2{
+  color: $otherh;
+}
+h5{
+  color: $otherh;
+}
+.fa{
+  color: $button;
+}
+.fa:hover{
+  color:$buttonhover;
+}
+.btn{
+background-color: $button;
+  color: white;
+  border: $button;
+}
+.btn:hover{
+  background-color: $buttonhover;
+  border: $button;
+  color: white;
+}
+
 .hero-image{
   background-position: center;
   background-repeat: no-repeat;

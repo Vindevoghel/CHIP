@@ -1,4 +1,36 @@
 /* algemene style sheet waarin de partials in komen*/
+* {
+  font-family: 'Open Sans', sans-serif;
+  color: #312F30; }
+
+.navbar {
+  background-color: #312F30; }
+
+h1 {
+  color: #8C7468; }
+
+h2 {
+  color: #453829; }
+
+h5 {
+  color: #453829; }
+
+.fa {
+  color: #116e11; }
+
+.fa:hover {
+  color: #00676f; }
+
+.btn {
+  background-color: #116e11;
+  color: white;
+  border: #116e11; }
+
+.btn:hover {
+  background-color: #00676f;
+  border: #116e11;
+  color: white; }
+
 .hero-image {
   background-position: center;
   background-repeat: no-repeat;
