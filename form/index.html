@@ -9,25 +9,250 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/form.css" type="text/css">
 </head>
 <body>
 
-<header>
+<!-- Here starts the navbar !-->
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand"> <img src="assets/robot-icon%2064px.png"></a>
+    <div class="collapse navbar-collapse" id="collapse_target">
+        <span class="navbar-text"> CHIP </span>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">HOME</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target"
+                   href="#">ABOUT</a>
+                <span class="caret"></span>
+                <div class="dropdown-menu" aria-labelledby="dropdown_target">
+                    <ul class="navbar-nav">
+                        <a class="dropdown-item"> TECH </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item"> PEOPLE </a>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">EVENT</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
-</header>
 
-<section>
+<!-- top banner -->
+<section class="midsection">
 
-    <div class="row">
-        <div class="col-sm-1-6">
+    <div class="spacebetween1">
 
+    </div>
+
+    <div class="backimage1">
+    </div>
+
+<article id="funding">
+
+<!-- crowdfunding -->
+
+
+    <div class="grid-container-fluid">
+        <div id="crowdfunding">
+            <div class="row py-2 px-2">
+                <div class="col-sm my-5 p-4 border rounded kolomhoofd">
+                    <h3 class="bigtitle">What could you do for us?</h3>
+                </div>
+            </div>
+
+            <div class="row py-2 px-2">
+                <div class="col-sm main-text pl-5 kolom">
+                    <h3 class="hptop">Support our project</h3><br>
+                    <h5 class="hptop">
+                        We are a small company, with big plans!<br>
+                        But we need your help to reach our goals!
+                    </h5>
+                    <p class="hptop">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Animi assumenda consequuntur deserunt dignissimos distinctio,
+                        eaque exercitationem illum inventore iste labore magni, odio
+                        provident qui sapiente sed totam ullam, voluptatem voluptatum!
+                    </p>
+
+                </div>
+                <div class="col-sm">
+                    <img class="fundingfoto" src="img/bot-boxes-big.jpg" alt="" height="500" width="540" />
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row py-2 px-2 ">
+                <div class="col-sm">
+                    <img class="" src="#" alt="" height="500" width="540" />
+                </div>
+                <div class="col-sm main-text text-sm-right pr-5 kolom">
+                    <h3 class="hpbottom">Support our project</h3>
+                    <h5 class="hpbottom">
+                        We are a small company, with big plans!<br>
+                        But we need your help to reach our goals!
+                    </h5>
+                    <p class="hpbottom">
+                        Crowdfunding (ook wel 'publieksfinanciering' genoemd)
+                        is een alternatieve wijze om een project of onderneming
+                        te financieren. Ondernemers gaan in de meeste gevallen
+                        naar een bank om een kredietaanvraag te doen en zo
+                        startkapitaal te verkrijgen.
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="col-sm-7-12">
+    </div>
 
+</article>
+
+    <div class="spacebetween2">
+    </div>
+
+</section>
+
+<section class="theform">
+
+<!-- form part 1 -->
+    <div class="container register border border-dark">
+        <div class="row">
+            <div class="col-md-3 register-left">
+                <img src="img/botti-mini.jpg" alt=""/>
+                <h3>Welcome</h3>
+                <p>You are 30 seconds away from earning your own money!</p>
+                <input type="submit" name="" value="Login"/><br/>
+            </div>
+            <div class="col-md-9 register-right">
+                <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Subscribe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Support us</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <h3 class="register-heading">Apply as a Employee</h3>
+                        <div class="row register-form">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="First Name *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Last Name *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Password *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control"  placeholder="Confirm Password *" value="" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Your Email *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Your Phone *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control">
+                                        <option class="hidden"  selected disabled>Please select your Sequrity Question</option>
+                                        <option>What is your Birthdate?</option>
+                                        <option>What is Your old Phone Number</option>
+                                        <option>What is your Pet Name?</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Enter Your Answer *" value="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row register-form">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="">Why are you interested in our project?</label>
+                                    <textarea class="form-control" name="" id="" rows="3" placeholder="enter message"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row register-form">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="maxl">
+                                        <label class="radio inline">
+                                            <input type="radio" name="gender" value="male" checked>
+                                            <span> Male </span>
+                                        </label>
+                                        <label class="radio inline">
+                                            <input type="radio" name="gender" value="female">
+                                            <span>Female </span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="submit" class="btnRegister"  value="Register"/>
+                            </div>
+                        </div>
+                    </div>
+
+<!-- form part 2 -->
+                    <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="card-details">
+                            <h3 class="title">Credit Card Details</h3>
+                            <div class="row">
+                                <div class="form-group col-sm-7">
+                                    <label for="card-holder">Card Holder</label>
+                                    <input id="card-holder" type="text" class="form-control" placeholder="Card Holder" aria-label="Card Holder" aria-describedby="basic-addon1">
+                                </div>
+                                <div class="form-group col-sm-5">
+                                    <label for="">Expiration Date</label>
+                                    <div class="input-group expiration-date">
+                                        <input type="text" class="form-control" placeholder="MM" aria-label="MM" aria-describedby="basic-addon1">
+                                        <span class="date-separator">/</span>
+                                        <input type="text" class="form-control" placeholder="YY" aria-label="YY" aria-describedby="basic-addon1">
+                                    </div>
+                                </div>
+                                <div class="form-group col-sm-8">
+                                    <label for="card-number">Card Number</label>
+                                    <input id="card-number" type="text" class="form-control" placeholder="Card Number" aria-label="Card Holder" aria-describedby="basic-addon1">
+                                </div>
+                                <div class="form-group col-sm-4">
+                                    <label for="cvc">CVC</label>
+                                    <input id="cvc" type="text" class="form-control" placeholder="CVC" aria-label="Card Holder" aria-describedby="basic-addon1">
+                                </div>
+                                <div class="form-group col-sm-12">
+                                    <button type="button" class="btn btn-primary btn-block">Proceed</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
 </section>
+
+<footer>
+
+
+</footer>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
