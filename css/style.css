@@ -123,8 +123,7 @@ audio {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  color: antiquewhite; }
+  transform: translate(-50%, -50%); }
 
 /*removes scrollbar caused by 0padding containers*/
 .carouselcontainer, .aboutcontainer {
@@ -132,14 +131,19 @@ audio {
 
 /*adds margins to about page text-boxes and images */
 .main-text-box {
-  max-width: 600px;
+  max-width: 320px;
   background-color: grey; }
 
 .about-image {
-  max-width: 600px; }
+  max-width: 320px; }
 
 .about-row {
-  margin: 50px 50px; }
+  margin: 50px auto; }
+
+/* adds background to about tech */
+#mainabout {
+  background: -webkit-radial-gradient(#2c2c2c, #1a1a1a);
+  background: radial-gradient(#2c2c2c, #1a1a1a); }
 
 #carouseldiv {
   z-index: -1;
@@ -182,7 +186,7 @@ audio {
   height: 450px; }
 
 #demo {
-  font-size: 70px;
+  font-size: 50px;
   text-align: center;
   color: white; }
 
@@ -207,10 +211,5 @@ audio {
   height: 100%;
   width: 100%;
   position: absolute; }
-
-.extrainfoevents {
-  position: relative;
-  left: 0;
-  top: 10px; }
 
 /*# sourceMappingURL=style.css.map */

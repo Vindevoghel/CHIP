@@ -11,8 +11,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  color: antiquewhite;
-}
+  }
 
 /*removes scrollbar caused by 0padding containers*/
 
@@ -33,4 +32,11 @@
 
 .about-row {
   margin: 50px auto;
+}
+
+/* adds background to about tech */
+
+#mainabout {
+  background: -webkit-radial-gradient(rgb(44, 44, 44), rgb(26, 26, 26));
+  background: radial-gradient(rgb(44, 44, 44), rgb(26, 26, 26));
 }
