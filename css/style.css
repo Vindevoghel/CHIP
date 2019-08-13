@@ -110,6 +110,9 @@ footer ul li .top {
 .icon a {
   text-decoration: none; }
 
+audio {
+  background-color: #312F30; }
+
 /* positions h1 in center of carousel */
 #carouseldiv {
   z-index: -1;
