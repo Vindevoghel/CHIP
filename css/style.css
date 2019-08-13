@@ -1,4 +1,36 @@
 /* algemene style sheet waarin de partials in komen*/
+* {
+  font-family: 'Open Sans', sans-serif;
+  color: #312F30; }
+
+.navbar {
+  background-color: #312F30; }
+
+h1 {
+  color: #8C7468; }
+
+h2 {
+  color: #453829; }
+
+h5 {
+  color: #453829; }
+
+.fa {
+  color: #116e11; }
+
+.fa:hover {
+  color: #00676f; }
+
+.btn {
+  background-color: #116e11;
+  color: white;
+  border: #116e11; }
+
+.btn:hover {
+  background-color: #00676f;
+  border: #116e11;
+  color: white; }
+
 .hero-image {
   background-position: center;
   background-repeat: no-repeat;
@@ -92,10 +124,40 @@ footer ul li {
   background-color: grey; }
 
 .about-image {
+  max-width: 600px; }
+
+.about-row {
+  margin: 50px 50px; }
+
+#carouseldiv {
+  z-index: -1;
+  position: relative; }
+
+#carousel-h1 {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: antiquewhite; }
+
+/*removes scrollbar caused by 0padding containers*/
+.carouselcontainer, .aboutcontainer {
+  overflow: hidden; }
+
+/*adds margins to about page text-boxes and images */
+.main-text-box {
+  max-width: 600px;
+  background-color: grey; }
+
+.about-image {
   max-width: 300px; }
 
 .about-row {
   margin: 50px 50px; }
+
+.space {
+  margin: 35%; }
 
 .container-fluid-events {
   padding: 0;

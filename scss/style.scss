@@ -1,5 +1,18 @@
 /* algemene style sheet waarin de partials in komen*/
 
+$heading:'Lexend Deca', sans-serif;
+$button: #116e11;
+$buttonhover: #00676f;
+$buttonactive: #4e0000;
+$h1color: #8C7468;
+$otherh: #453829;
+$basecolor: #312F30;
+
+*{
+  font-family: 'Open Sans', sans-serif;
+  color:$basecolor;
+}
+
 @import "home";
 @import "about-technical";
 @import "form";
