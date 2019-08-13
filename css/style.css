@@ -1,9 +1,5 @@
 /* algemene style sheet waarin de partials in komen*/
-.main-container {
-  padding-top: 50px; }
-
 .hero-image {
-  background-image: url("../assets/adult-artificial-intelligence-bot-1020325.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,7 +7,67 @@
   min-height: 500px; }
 
 .hero-text {
-  text-align: center; }
+  text-align: center;
+  padding-top: 150px; }
+
+.aboutsection {
+  background-color: white;
+  padding-bottom: 300px; }
+
+.cardtech {
+  margin-top: 50px; }
+
+.cardpeople {
+  margin-top: 50px; }
+
+.cardtech:hover {
+  transform: scale(1.1);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
+
+.cardpeople:hover {
+  transform: scale(1.1);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
+
+.parallax-home {
+  padding: 0;
+  background-image: url("../assets/adult-artificial-intelligence-bot-1020325.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.parallax-event {
+  height: 200px; }
+
+.eventsection {
+  background-color: white;
+  padding-bottom: 200px; }
+
+footer {
+  background-color: #1b1e21;
+  color: white; }
+
+footer ul {
+  text-decoration: none;
+  width: 100%; }
+
+footer ul li {
+  display: inline-block; }
+
+.icon {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+  font-size: 30px;
+  text-decoration: none;
+  border-radius: 50%; }
+
+.icon .fa {
+  margin-left: 10px;
+  margin-right: 20px; }
+
+.icon a {
+  text-decoration: none; }
 
 /* positions h1 in center of carousel */
 #carouseldiv {
@@ -23,7 +79,23 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  color: antiquewhite; }
+
+/*removes scrollbar caused by 0padding containers*/
+.carouselcontainer, .aboutcontainer {
+  overflow: hidden; }
+
+/*adds margins to about page text-boxes and images */
+.main-text-box {
+  max-width: 600px;
+  background-color: grey; }
+
+.about-image {
+  max-width: 300px; }
+
+.about-row {
+  margin: 50px 50px; }
 
 .container-fluid-events {
   padding: 0;
