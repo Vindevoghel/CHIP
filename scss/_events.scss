@@ -41,3 +41,22 @@
 .footerstuff{
   height: 50px;
 }
+
+.map-responsive{
+  overflow:hidden;
+  position:relative;
+  height:400px;
+}
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+.extrainfoevents{
+  position:relative;
+  left:0;
+  top:10px;
+}

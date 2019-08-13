@@ -92,10 +92,40 @@ footer ul li {
   background-color: grey; }
 
 .about-image {
+  max-width: 600px; }
+
+.about-row {
+  margin: 50px 50px; }
+
+#carouseldiv {
+  z-index: -1;
+  position: relative; }
+
+#carousel-h1 {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: antiquewhite; }
+
+/*removes scrollbar caused by 0padding containers*/
+.carouselcontainer, .aboutcontainer {
+  overflow: hidden; }
+
+/*adds margins to about page text-boxes and images */
+.main-text-box {
+  max-width: 600px;
+  background-color: grey; }
+
+.about-image {
   max-width: 300px; }
 
 .about-row {
   margin: 50px 50px; }
+
+.space {
+  margin: 35%; }
 
 .container-fluid-events {
   padding: 0;
@@ -125,5 +155,22 @@ footer ul li {
 
 .footerstuff {
   height: 50px; }
+
+.map-responsive {
+  overflow: hidden;
+  position: relative;
+  height: 400px; }
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute; }
+
+.extrainfoevents {
+  position: relative;
+  left: 0;
+  top: 10px; }
 
 /*# sourceMappingURL=style.css.map */
