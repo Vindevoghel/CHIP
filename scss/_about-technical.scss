@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 /* positions h1 in center of carousel */
 
 #carouseldiv {
@@ -11,4 +16,26 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+  color: antiquewhite;
+}
+
+/*removes scrollbar caused by 0padding containers*/
+
+#carouseldiv, #aboutcontainer {
+  overflow: hidden;
+}
+
+/*adds margins to about page text-boxes and images */
+
+.main-text-box {
+  max-width: 600px;
+  background-color: grey;
+}
+
+.about-image {
+  max-width: 300px;
+}
+
+.about-row {
+  margin: 50px 50px;
 }
