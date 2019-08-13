@@ -203,6 +203,7 @@ footer ul li {
 .extrainfoevents {
   position: relative;
   left: 0;
-  top: 10px; }
+  top: 10px;
+  display: flex; }
 
 /*# sourceMappingURL=style.css.map */
