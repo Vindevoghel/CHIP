@@ -80,10 +80,10 @@ body {
   margin-left: 255px;
   height: 100%; }
 
-.theform {
+.ourform {
   border-top: 3px solid #312F30; }
 
-.theform {
+.ourform {
   background-image: url("../../assets/theback2.jpg");
   background-position-x: center;
   background-repeat: no-repeat;
@@ -270,4 +270,4 @@ body {
   .payment-form .card-details button {
     margin-top: 2em; } }
 
-/*# sourceMappingURL=form.css.map */
+/*# sourceMappingURL=s-form.css.map */
