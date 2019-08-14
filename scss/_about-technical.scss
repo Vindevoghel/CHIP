@@ -21,26 +21,23 @@
 
 /*adds margins to about page text-boxes and images */
 
-.main-text-box {
-  background-color: white;
-}
 
 .about-image {
   max-width: 320px;
 }
 
-.about-row {
-  background-color: rgba(246, 246, 246, 0.2);
+.about-row-t {
+  background-color: rgba(105, 105, 105, 0.4);
   min-height: 300px;
-  margin: 50px;
-  padding: 20px;
+  margin: 50px auto;
+  padding: 20px auto;
 }
 
 /* adds background to about tech */
 
 #mainabout {
-  background: -webkit-linear-gradient(-180deg, rgb(70, 70, 70), rgb(0, 0, 0));
-  background: linear-gradient(-180deg, rgb(70, 70, 70), rgb(0, 0, 0));
+  background: -webkit-radial-gradient(rgb(237, 237, 237), rgb(202, 210, 217));
+  background: radial-gradient(rgb(237, 237, 237), rgb(202, 210, 217));
 }
 
 /*makes youtube responsive*/

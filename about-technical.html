@@ -4,7 +4,11 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145678990-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'UA-145678990-1');
@@ -25,7 +29,7 @@
 </head>
 <body id="mainabout">
 <!-- navbar -->
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+<nav class="navbar navbar-expand-sm sticky-top">
     <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -55,7 +59,6 @@
             </li>
         </ul>
     </div>
-
 </nav>
 <!-- page container -->
 <div class="container-fluid p-0 aboutcontainer">
@@ -98,14 +101,14 @@
     </header>
     <!-- main section consisting of 3 rows with two columns (one figure and one text section) each -->
     <main>
-        <section class="row about-row justify-content-around h-100">
+        <section class="row about-row-t justify-content-around h-100">
             <figure class="col-md-6 about-image my-auto">
                 <!-- video -->
                 <div class="youtube-container">
                     <iframe id="youtubeembed" src="https://www.youtube.com/embed/JzB7yS9t1YE"></iframe>
                 </div>
             </figure>
-            <article class="col-md-6 main-text-box my-auto">
+            <article class="col-md-6 main-text-box-t my-auto">
                 <h2 class="about-t-h2">Lorem Ipsum</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in elit et neque dapibus dictum et ut
                     sem.
@@ -122,11 +125,11 @@
             </article>
         </section>
 
-        <section class="row flex-row-reverse about-row justify-content-around h-100">
+        <section class="row flex-row-reverse about-row-t justify-content-around h-100">
             <figure class="col-md-6 about-image my-auto">
-                <img class="img-fluid" src="assets/robotpointingleft.png" alt="image 2">
+                <img class="img-fluid" src="assets/abouttechnicalpicture1.png" alt="robot 1">
             </figure>
-            <article class="col-md-6 main-text-box my-auto">
+            <article class="col-md-6 main-text-box-t my-auto">
                 <h2 class="about-t-h2">Lorem Ipsum</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in elit et neque dapibus dictum et ut
                     sem.
@@ -143,11 +146,11 @@
             </article>
         </section>
 
-        <section class="row about-row justify-content-around h-100">
+        <section class="row about-row-t justify-content-around h-100">
             <figure class="col-md-6 about-image my-auto">
-                <img class="img-fluid" src="assets/robotpointingright.png" alt="image 3">
+                <img class="img-fluid" src="assets/abouttechnicalpicture2.png" alt="robot 2">
             </figure>
-            <article class="col-md-6 main-text-box my-auto">
+            <article class="col-md-6 main-text-box-t my-auto">
                 <h2 class="about-t-h2">Lorem Ipsum</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in elit et neque dapibus dictum et ut
                     sem.
@@ -166,21 +169,23 @@
     </main>
     <!-- footer with audio and links -->
     <footer>
-        <audio controls>
-            <source src="https://www.youtube.com/watch?v=SUkUjsr1FqM" type="audio">
-        </audio>
         <div class="footer-copyright text-center">© 2019 Copyright:
             <a href="#">chip.com</a>
         </div>
         <ul>
             <li><a href="#">Privacy</a></li>
             <li><a href="#">Terms</a></li>
+            <li><a class="top" href="#" id="topbutton">Back to Top</a></li>
         </ul>
         <div class="icon">
             <a href="#" class="fa fa-facebook"></a>
             <a href="#" class="fa fa-linkedin"></a>
             <a href="#" class="fa fa-instagram"></a>
         </div>
+        <audio controls autoplay>
+            <source src="assets/The%20Things%20That%20Keep%20Us%20Here%20%20Scott%20Buckley%20%5BVlog%20No%20Copyright%20Music%5D.mp3"
+                    type="audio/mp3">
+        </audio>
     </footer>
 </div>
 <!--bootstrap js -->
