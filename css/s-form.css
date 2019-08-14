@@ -10,7 +10,7 @@ body {
   height: 310px; }
 
 .midsection1 {
-  background-image: url("../img/theback1.jpg");
+  background-image: url("../../assets/theback1.jpg");
   background-position-x: center;
   background-position-y: 90px;
   background-repeat: no-repeat;
@@ -18,7 +18,7 @@ body {
   background-attachment: fixed; }
 
 .midsection2 {
-  background-image: url("../img/theback3.jpg");
+  background-image: url("../../assets/theback3.jpg");
   background-position-x: center;
   background-position-y: 1089px;
   background-repeat: no-repeat;
@@ -80,11 +80,11 @@ body {
   margin-left: 255px;
   height: 100%; }
 
-.theform {
+.ourform {
   border-top: 3px solid #312F30; }
 
-.theform {
-  background-image: url("../img/theback2.jpg");
+.ourform {
+  background-image: url("../../assets/theback2.jpg");
   background-position-x: center;
   background-repeat: no-repeat;
   background-size: cover;
