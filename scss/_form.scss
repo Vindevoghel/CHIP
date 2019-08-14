@@ -3,6 +3,7 @@ body {
   margin: 0 auto;
   font-family: "Open Sans";
   color: $basecolor;
+  overflow-x: hidden;
 }
 
 .spacebetween1 {
@@ -59,6 +60,7 @@ body {
 }
 
 
+
 .kolom {
   margin: 0 auto;
   background-color: $white;
@@ -101,12 +103,8 @@ body {
   padding: 40px 0;
 }
 
-.hrhrhr {
-  margin: 20px 0
-}
 
 .registo {
-  
   background: linear-gradient(90deg,
           rgba(2, 31, 56, 0.7) 0%,
           rgba(49, 47, 48, 0.7) 30%,
