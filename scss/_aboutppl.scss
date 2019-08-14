@@ -20,15 +20,20 @@
 
 /*adds margins to about page text-boxes and images */
 
-.main-text-box {
-  max-width: 600px;
-  background-color: grey;
-}
 
 .about-image {
   max-width: 300px;
 }
-
+.bg-warning{
+  background-color: #8C7468;
+}
 .about-row {
   margin: 50px 50px;
+}
+#mainabout1{
+  opacity: 0.8;
+}
+
+.abt{
+  background-color: grey;
 }
