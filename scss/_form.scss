@@ -2,6 +2,7 @@ body {
   width: 100%;
   margin: 0 auto;
   font-family: "Open Sans";
+  color: $basecolor;
 }
 
 .spacebetween1 {
@@ -77,7 +78,7 @@ body {
   .bigtitle, .hptop, .hpbottom {
     font-family: "Lexend Deca";
     .h3top, .h3bottom {
-      color: #453829;
+      color: $otherh;
       margin-top: 40px;
       padding-top: 20px;
     }
@@ -98,16 +99,13 @@ body {
   height: 100%;
 }
 
-.ourform {
-  border-top: 3px solid #312F30;
-}
-
-.ourform {
+#theform {
   background-image: url("../assets/theback2.jpg");
   background-position-x: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 40px 0;
+  border-top: 3px solid $basecolor;
 }
 
 .hrhrhr {
@@ -130,21 +128,21 @@ body {
 
   .register-left {
     text-align: center;
-    color: #fff;
+    color: $basecolor;
     margin-top: 2%;
 
     .myphone {
       width: 160px;
       padding: 6px 16px 8px 16px;
-      background: #116e11;
-      color: #453829;
+      background: $button;
+      color: $otherh;
       text-shadow: 1px 1px 2px whitesmoke;
       cursor: pointer;
       border: 2px solid #312F30;
       border-radius: 2px;
     }
     .myphone:hover {
-      background-color: #00676f;
+      background-color: $buttonhover;
     }
 
     .botti {
@@ -156,7 +154,7 @@ body {
     }
 
     .h3form {
-      color: #8C7468;
+      color: $otherh;
       font-size: 28px;
       font-weight: 900;
       text-transform: capitalize;
@@ -165,14 +163,14 @@ body {
 
     .p1form {
       font-weight: lighter;
-      color: #8C7468;
+      color: $h1color;
       padding: 12%;
       margin-top: 4px;
     }
   }
 
   .register-right {
-    background: #f8f9fa;
+    background: $white;
     border-top-left-radius: 20% 50%;
     border-top-right-radius: 8% 50%;
     border-bottom-left-radius: 20% 50%;
@@ -202,7 +200,7 @@ body {
 
   #myTab {
     margin-top: 3%;
-    background: #116e11;
+    background: $button;
     border-radius: 1.5rem;
     width: 32%;
     float: right;
@@ -218,11 +216,13 @@ body {
     }
 
     #home-tab:hover {
-      background: #00676f;
+      background: $buttonhover;
+      border-top-left-radius: 1.5rem;
+      border-bottom-left-radius: 1.5rem;
     }
 
     #profile-tab:hover {
-      background: #00676f;
+      background: $buttonhover;
       border: 2px solid #116e11;
       border-top-left-radius: 1.5rem;
       border-bottom-left-radius: 1.5rem;
@@ -232,7 +232,7 @@ body {
       width: 132px;
       color: #8C7468;
       text-shadow: 1px 1px 1px black;
-      border: 3px solid #00676f;
+      border: 3px solid$buttonhover;
       border-top-left-radius: 1.5rem;
       border-bottom-left-radius: 1.5rem;
     }
@@ -249,7 +249,7 @@ body {
     float: right;
     margin-top: 4%;
     margin-left: -60px;
-    border: 2px solid #312F30;
+    border: 2px solid $basecolor;
     border-radius: 2px;
     padding: 6px 16px 8px 16px;
     background: #116e11;
@@ -261,10 +261,10 @@ body {
   }
 
   #btnRegister1:hover {
-    background: #00676f;
+    background: $buttonhover;
   }
   .reset:hover {
-    background: #00676f;
+    background: $buttonhover;
   }
 
 }
@@ -297,7 +297,7 @@ body {
     }
   }
   .form2 {
-    border-top: 2px solid #5ea4f3;
+    border-top: 2px solid $basecolor;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
     background-color: #ffffff;
     max-width: 600px;
@@ -325,8 +325,8 @@ body {
     border: 2px solid #312F30;
     border-radius: 2px;
     padding: 6px 26px 8px 26px;
-    background: #116e11;
-    color: #453829;
+    background: $button;
+    color: $otherh;
     text-shadow: 1px 1px 2px whitesmoke;
     width: 150px;
     cursor: pointer;
