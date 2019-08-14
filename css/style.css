@@ -179,19 +179,36 @@ footer {
 
 /*adds margins to about page text-boxes and images */
 .main-text-box {
-  max-width: 320px;
-  background-color: grey; }
+  background-color: white; }
 
 .about-image {
   max-width: 320px; }
 
 .about-row {
-  margin: 50px auto; }
+  background-color: rgba(246, 246, 246, 0.2);
+  min-height: 300px;
+  margin: 50px;
+  padding: 20px; }
 
 /* adds background to about tech */
 #mainabout {
-  background: -webkit-radial-gradient(#2c2c2c, #1a1a1a);
-  background: radial-gradient(#2c2c2c, #1a1a1a); }
+  background: -webkit-linear-gradient(-180deg, #464646, black);
+  background: linear-gradient(-180deg, #464646, black); }
+
+/*makes youtube responsive*/
+.youtube-container {
+  position: relative;
+  padding-bottom: 55%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden; }
+
+#youtubeembed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
 body {
   width: 100%;
@@ -481,15 +498,17 @@ body {
   overflow: hidden; }
 
 /*adds margins to about page text-boxes and images */
-.main-text-box {
-  max-width: 600px;
-  background-color: grey; }
-
 .about-image {
   max-width: 300px; }
 
+.bg-warning {
+  background-color: #8C7468; }
+
 .about-row {
   margin: 50px 50px; }
+
+.txt {
+  background-color: rgba(211, 211, 211, 0.7); }
 
 .container-fluid-events {
   padding: 0;
