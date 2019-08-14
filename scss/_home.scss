@@ -1,5 +1,6 @@
 .navbar{
   background-color:$basecolor;
+  color:$h1color;
 }
 
 footer{
@@ -14,9 +15,6 @@ h2{
 }
 h5{
   color: $otherh;
-}
-.card-img-top{
-  max-width: 200px;
 }
 
 .fa{
@@ -53,15 +51,30 @@ background-color: $button;
 }
 .eventsection{
   background-color: $white;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
+  .eventimage{
+    padding-top: 50px;
+    padding-right: 20px;
+  }
+  .eventtext{
+    text-align: center;
+    margin-top: 100px;
+    min-height: 300px;
+  }
 }
 
 .cardtech{
-  margin-top: 50px;
+  margin-top: 200px;
+  .card-body{
+    min-height: 300px;
+  }
 }
-
 .cardpeople{
-  margin-top:50px;
+  margin-top:200px;
+  min-height: 800px;
+  .card-body{
+    min-height: 300px;
+  }
 }
 
 .cardtech:hover{

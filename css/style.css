@@ -19,7 +19,8 @@ h5 {
   font-family: 'Lexend Deca',sans-serif; }
 
 .navbar {
-  background-color: #312F30; }
+  background-color: #312F30;
+  color: #8C7468; }
 
 footer {
   background-color: #312F30; }
@@ -33,9 +34,6 @@ h2 {
 
 h5 {
   color: #453829; }
-
-.card-img-top {
-  max-width: 200px; }
 
 .fa {
   color: #116e11; }
@@ -70,13 +68,25 @@ h5 {
 
 .eventsection {
   background-color: rgba(246, 246, 246, 0.7);
-  padding-bottom: 200px; }
+  padding-bottom: 100px; }
+  .eventsection .eventimage {
+    padding-top: 50px;
+    padding-right: 20px; }
+  .eventsection .eventtext {
+    text-align: center;
+    margin-top: 100px;
+    min-height: 300px; }
 
 .cardtech {
-  margin-top: 50px; }
+  margin-top: 200px; }
+  .cardtech .card-body {
+    min-height: 300px; }
 
 .cardpeople {
-  margin-top: 50px; }
+  margin-top: 200px;
+  min-height: 800px; }
+  .cardpeople .card-body {
+    min-height: 300px; }
 
 .cardtech:hover {
   transform: scale(1.1);
