@@ -1,0 +1,576 @@
+/* algemene style sheet waarin de partials in komen*/
+/*--------------------------------------------Variables*/
+/*----------------------------------------General color and font*/
+* {
+  font-family: 'Open Sans', sans-serif;
+  color: #312f30; }
+
+/*--------------------------------------------Heading lay-out*/
+h1 {
+  font-family: 'Lexend Deca', sans-serif;
+  color: #8C7468; }
+
+h2 {
+  font-family: 'Lexend Deca',sans-serif;
+  color: #453829; }
+
+h3 {
+  font-family: 'Lexend Deca',sans-serif;
+  color: #453829; }
+
+h4 {
+  font-family: 'Lexend Deca',sans-serif;
+  color: #453829; }
+
+h5 {
+  font-family: 'Lexend Deca',sans-serif;
+  color: #453829; }
+
+/*----------------------------------------------Navbar lay-out*/
+.navbar {
+  background-color: #312f30; }
+  .navbar ul li a {
+    color: whitesmoke; }
+
+.dropdown-menu {
+  background-color: #312f30; }
+
+/*---------------------Footer lay-out*/
+footer {
+  background-color: #312f30;
+  color: white;
+  position: relative; }
+  footer .fa {
+    color: #116e11; }
+  footer .fa:hover {
+    color: #00676f; }
+  footer .footer-copyright {
+    color: ghostwhite; }
+    footer .footer-copyright a {
+      color: #116e11; }
+  footer ul {
+    text-decoration: none;
+    width: 100%; }
+    footer ul li {
+      display: inline-block;
+      padding: 10px; }
+      footer ul li a {
+        color: #8C7468; }
+      footer ul li .top {
+        position: absolute;
+        right: 50px; }
+
+/*-----------------------------Icon lay-out*/
+.icon {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+  font-size: 30px;
+  text-decoration: none;
+  border-radius: 50%; }
+  .icon .fa {
+    margin-left: 10px;
+    margin-right: 20px; }
+  .icon a {
+    text-decoration: none; }
+
+/* --------------------------------Partials*/
+.btn {
+  background-color: #116e11;
+  color: white;
+  border: #116e11; }
+
+.btn:hover {
+  background-color: #00676f;
+  border: #116e11;
+  color: white; }
+
+.hero-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 500px; }
+
+.hero-text {
+  text-align: center;
+  padding-top: 150px; }
+  .hero-text h1 {
+    font-size: 85px; }
+  .hero-text p {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 30px; }
+  .hero-text a {
+    text-transform: uppercase;
+    padding: 10px 30px;
+    min-width: 50px; }
+
+.aboutsection {
+  background-color: rgba(246, 246, 246, 0.7);
+  padding-bottom: 300px; }
+  .aboutsection .cardtech {
+    margin-top: 200px; }
+    .aboutsection .cardtech .card-body {
+      min-height: 300px; }
+      .aboutsection .cardtech .card-body .card-text {
+        min-height: 150px; }
+    .aboutsection .cardtech a {
+      padding: 10px 30px;
+      min-width: 200px; }
+  .aboutsection .cardpeople {
+    margin-top: 200px;
+    min-height: 800px; }
+    .aboutsection .cardpeople .card-body {
+      min-height: 300px; }
+      .aboutsection .cardpeople .card-body .card-text {
+        min-height: 150px; }
+    .aboutsection .cardpeople a {
+      padding: 10px 30px;
+      min-width: 200px; }
+
+.cardtech:hover {
+  transform: scale(1.1);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
+
+.cardpeople:hover {
+  transform: scale(1.1);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
+
+.eventsection {
+  background-color: rgba(246, 246, 246, 0.7);
+  padding-bottom: 100px; }
+  .eventsection .eventimage {
+    padding-top: 50px;
+    padding-right: 20px; }
+  .eventsection .eventtext {
+    text-align: center;
+    margin-top: 100px;
+    min-height: 300px; }
+  .eventsection a {
+    padding: 10px 30px; }
+
+.parallax-home {
+  padding: 0;
+  background-image: url("../assets/adult-artificial-intelligence-bot-1020325.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.parallax-event {
+  height: 200px; }
+
+/* positions h1 in center of carousel */
+#carouseldiv {
+  z-index: -1;
+  position: relative; }
+
+#carousel-h1 {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+/*removes scrollbar caused by 0padding containers*/
+.carouselcontainer, .aboutcontainer {
+  overflow: hidden; }
+
+/*adds margins to about page text-boxes and images */
+.about-image {
+  max-width: 320px; }
+
+.about-row-t {
+  background-color: rgba(105, 105, 105, 0.2);
+  min-height: 300px;
+  margin: 50px;
+  padding: 20px auto; }
+
+/* adds background to about tech */
+#mainabout {
+  background: -webkit-radial-gradient(#ededed, #cad2d9);
+  background: radial-gradient(#ededed, #cad2d9); }
+
+/*makes youtube responsive*/
+.youtube-container {
+  position: relative;
+  padding-bottom: 55%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden; }
+
+#youtubeembed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Open Sans";
+  color: #312f30;
+  overflow-x: hidden; }
+
+.spacebetween1 {
+  height: 400px; }
+
+.spacebetween2 {
+  height: 210px; }
+
+.midsection1 {
+  background-image: url("../assets/theback1.jpg");
+  background-position-x: center;
+  background-position-y: 90px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.midsection2 {
+  background-image: url("../assets/theback3.jpg");
+  background-position-x: center;
+  background-position-y: 1089px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+
+#funding {
+  padding-bottom: 40px;
+  background-color: rgba(246, 246, 246, 0.7);
+  margin-bottom: 100px; }
+
+#crowdfunding {
+  width: 100%;
+  background-color: rgba(246, 246, 246, 0.7);
+  margin-bottom: -40px; }
+
+.kolomhoofd {
+  margin: 0 auto;
+  margin-top: 8px;
+  padding: 20px 10px;
+  background-color: rgba(246, 246, 246, 0.7); }
+
+.bigtitle {
+  font-size: 40px;
+  letter-spacing: 2px;
+  text-align: center;
+  background-color: rgba(246, 246, 246, 0.7);
+  padding: 22px 0; }
+
+.kolom {
+  margin: 0 auto;
+  background-color: rgba(246, 246, 246, 0.7); }
+  .kolom .hptop, .kolom .h3top {
+    text-align: right; }
+  .kolom .hpbottom, .kolom .h3bottom {
+    text-align: left; }
+  .kolom .bigtitle, .kolom .hptop, .kolom .hpbottom {
+    font-family: "Lexend Deca"; }
+    .kolom .bigtitle .h3top, .kolom .bigtitle .h3bottom, .kolom .hptop .h3top, .kolom .hptop .h3bottom, .kolom .hpbottom .h3top, .kolom .hpbottom .h3bottom {
+      color: #453829;
+      margin-top: -20px; }
+
+.main-text {
+  padding: 5px 10px; }
+
+.tweederij {
+  height: 600px; }
+
+.left-foto {
+  margin-left: 100px; }
+
+.right-foto {
+  margin-left: 5px; }
+
+#theform {
+  background-color: rgba(246, 246, 246, 0.7);
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px 0; }
+
+.registo {
+  background: linear-gradient(90deg, rgba(2, 31, 56, 0.7) 0%, rgba(49, 47, 48, 0.7) 30%, rgba(4, 52, 78, 0.8) 60%, rgba(0, 74, 48, 0.8) 100%);
+  margin-top: 3%;
+  padding: 3%;
+  min-width: 1200px; }
+  .registo #myTabContent, .registo #profile {
+    min-height: 640px; }
+  .registo .register-left {
+    text-align: center;
+    color: #312f30;
+    margin-top: 2%; }
+    .registo .register-left .myphone {
+      width: 160px;
+      padding: 6px 16px 8px 16px;
+      background: #116e11;
+      color: #453829;
+      text-shadow: 1px 1px 2px whitesmoke;
+      cursor: pointer;
+      border: 2px solid #312F30;
+      border-radius: 2px; }
+    .registo .register-left .myphone:hover {
+      background-color: #00676f; }
+    .registo .register-left .botti {
+      margin-top: 4%;
+      margin-bottom: 30%;
+      width: 60%;
+      border-radius: 2px; }
+    .registo .register-left .h3form {
+      color: #453829;
+      font-size: 28px;
+      font-weight: 900;
+      text-transform: capitalize;
+      margin-bottom: 10px; }
+    .registo .register-left .p1form {
+      font-weight: lighter;
+      color: #312f30;
+      padding: 12%;
+      margin-top: 4px; }
+  .registo .register-right {
+    background: rgba(246, 246, 246, 0.7); }
+  .registo #signin {
+    margin-top: 50px; }
+    .registo #signin #h3top, .registo #signin #h5top {
+      margin-left: 100px;
+      margin-bottom: 12px; }
+  .registo .regi-partone, .registo .regi-parttwo {
+    max-width: 646px;
+    margin-left: 80px;
+    margin-top: 6px; }
+  .registo .regi-partthree {
+    max-height: 80px;
+    max-width: 646px;
+    margin-left: 80px; }
+  .registo .nav-link {
+    border-radius: 0px; }
+  .registo .nav-link:active {
+    background-color: #04344e; }
+  .registo #myTab {
+    margin-top: 3%;
+    background: #116e11;
+    width: 32%;
+    float: right;
+    border: none; }
+    .registo #myTab #home-tab, .registo #myTab #profile-tab {
+      padding: 6px 10px 10px 10px;
+      height: 40px;
+      font-weight: 900;
+      color: #8C7468;
+      text-shadow: 1px 1px 1px black;
+      border: none; }
+    .registo #myTab #home-tab:hover {
+      background: #00676f; }
+    .registo #myTab #profile-tab:hover {
+      background: #00676f; }
+    .registo #myTab .nav-link.active {
+      width: 132px;
+      color: #8C7468;
+      text-shadow: 1px 1px 1px black;
+      border: none; }
+  .registo .form-control {
+    min-width: 282px; }
+  .registo .maxl {
+    margin-left: 60px; }
+  .registo #btnRegister1, .registo .reset {
+    float: right;
+    margin-top: 4%;
+    margin-left: -60px;
+    padding: 6px 16px 8px 16px;
+    background: #116e11;
+    color: #453829;
+    text-shadow: 1px 1px 2px whitesmoke;
+    font-weight: 600;
+    width: 160px;
+    cursor: pointer; }
+  .registo #btnRegister1:hover {
+    background: #00676f; }
+  .registo .reset:hover {
+    background: #00676f; }
+
+.form2 {
+  padding: 50px 100px 0 100px;
+  margin-bottom: 50px;
+  font-family: 'Open Sans', sans-serif;
+  min-height: 640px; }
+  .form2 .dark {
+    background-color: rgba(246, 246, 246, 0.7); }
+    .form2 .dark .block-heading p {
+      opacity: 0.8; }
+  .form2 .content {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.75);
+    background-color: rgba(246, 246, 246, 0.7); }
+  .form2 .block-heading {
+    padding-top: 60px;
+    margin-bottom: 40px;
+    text-align: center; }
+    .form2 .block-heading .p1form {
+      text-align: center;
+      max-width: 420px;
+      margin: auto;
+      opacity: 0.7; }
+  .form2 .form2 {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+    background-color: rgba(246, 246, 246, 0.7);
+    max-width: 600px;
+    margin: auto; }
+  .form2 label {
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    color: #79818a;
+    text-transform: uppercase; }
+  .form2 .mailto {
+    margin-left: 220px; }
+  .form2 .phonenr {
+    margin-left: 330px; }
+  .form2 #btnRegister2 {
+    font-weight: 600;
+    margin-top: 75px;
+    margin-left: 475px;
+    padding: 6px 26px 8px 26px;
+    background: #116e11;
+    color: #453829;
+    text-shadow: 1px 1px 2px whitesmoke;
+    width: 150px;
+    cursor: pointer; }
+
+@media (min-width: 576px) {
+  .payment-form .title {
+    font-size: 1.2em; }
+
+  .payment-form .products {
+    padding: 40px; }
+
+  .payment-form .products .item-name {
+    font-size: 1em; }
+
+  .payment-form .products .price {
+    font-size: 1em; }
+
+  .payment-form .card-details {
+    padding: 40px 40px 30px; }
+
+  .payment-form .card-details button {
+    margin-top: 2em; } }
+#carouseldiv {
+  z-index: -1;
+  position: relative; }
+
+#carousel-h1 {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+/*removes scrollbar caused by 0padding containers*/
+.carouselcontainer, .aboutcontainer {
+  overflow: hidden; }
+
+/*adds margins to about page text-boxes and images */
+.about-image {
+  max-width: 300px; }
+
+.bg-warning {
+  background-color: #8C7468; }
+
+.about-row {
+  margin: 50px 50px; }
+
+.txt {
+  background-color: rgba(211, 211, 211, 0.7); }
+
+.img-fluid {
+  padding-top: 20px; }
+
+.container-fluid-events {
+  padding: 0;
+  background-image: url("../assets/boy-child-childhood-346796.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.parallaxevents {
+  height: auto; }
+
+.parafree {
+  height: 450px; }
+
+.parafreetop {
+  position: relative !important;
+  overflow: hidden !important;
+  display: block; }
+
+#demo {
+  font-size: 50px;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 6rem;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto; }
+
+.timer {
+  color: white;
+  height: auto; }
+
+.maps {
+  height: 400px; }
+
+.footerstuff {
+  height: 50px; }
+
+.map-responsive {
+  overflow: hidden;
+  position: relative;
+  height: 400px; }
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute; }
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 5px; }
+
+#myBtn:hover {
+  background-color: #555; }
+
+span {
+  font-size: 15px; }
+
+.box {
+  padding: 60px 0px; }
+
+.box-part {
+  background: #FFF;
+  border-radius: 0;
+  padding: 60px 10px;
+  margin: 30px 0px; }
+
+.text {
+  margin: 20px 0px; }
+
+.fa {
+  color: #4183D7; }
+
+/*# sourceMappingURL=style.css.map */
