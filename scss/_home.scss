@@ -3,9 +3,6 @@
   color:$h1color;
 }
 
-footer{
-  background-color:$basecolor;
-}
 h1{
   color:$h1color;
   font-family:'Lexend Deca',sans-serif;
@@ -17,12 +14,6 @@ h5{
   color: $otherh;
 }
 
-.fa{
-  color: $button;
-}
-.fa:hover{
-  color:$buttonhover;
-}
 .btn{
 background-color: $button;
   color: white;
@@ -48,7 +39,31 @@ background-color: $button;
 .aboutsection{
   background-color: $white;
   padding-bottom: 300px;
+  .cardtech{
+    margin-top: 200px;
+    .card-body{
+      min-height: 300px;
+    }
+  }
+  .cardpeople{
+    margin-top:200px;
+    min-height: 800px;
+    .card-body{
+      min-height: 300px;
+    }
+  }
 }
+
+.cardtech:hover{
+  transform: scale(1.1);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.cardpeople:hover{
+  transform: scale(1.1);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+
 .eventsection{
   background-color: $white;
   padding-bottom: 100px;
@@ -63,28 +78,6 @@ background-color: $button;
   }
 }
 
-.cardtech{
-  margin-top: 200px;
-  .card-body{
-    min-height: 300px;
-  }
-}
-.cardpeople{
-  margin-top:200px;
-  min-height: 800px;
-  .card-body{
-    min-height: 300px;
-  }
-}
-
-.cardtech:hover{
-    transform: scale(1.1);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  }
-.cardpeople:hover{
-  transform: scale(1.1);
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-}
 .parallax-home{
   padding:0;
   background-image: url("../assets/adult-artificial-intelligence-bot-1020325.jpg");
@@ -96,43 +89,46 @@ background-color: $button;
 .parallax-event{
   height: 200px;
 }
+
 footer{
-  background-color: #1b1e21;
+  background-color:$basecolor;
+  .fa{
+    color: $button;
+  }
+  .fa:hover{
+    color:$buttonhover;
+  }
   color: white;
   position: relative;
-}
-footer ul {
-  text-decoration: none;
-  width: 100%;
+  .footer-copyright{
+    color:$button;
+  }
+  ul {
+    text-decoration: none;
+    width: 100%;
+    li {
+      display: inline-block;
+      padding: 10px;
+      .top{
+        position:absolute;
+        right: 50px;}
+    }
+  }
 }
 
-footer ul li {
-  display: inline-block;
-  padding: 10px;
-}
-footer ul li .top{
-  position:absolute;
-  right: 50px;
-
-}
-.icon{
+.icon {
   display: flex;
   justify-content: center;
   padding-bottom: 10px;
   font-size: 30px;
   text-decoration: none;
   border-radius: 50%;
-}
-.icon .fa{
-  margin-left: 10px;
-  margin-right: 20px
-}
-
-.icon a{
-text-decoration: none;
-}
-
-audio{
-  background-color: #312F30;
+  .fa{
+    margin-left: 10px;
+    margin-right: 20px
+  }
+  a{
+    text-decoration: none;
+  }
 }
 
