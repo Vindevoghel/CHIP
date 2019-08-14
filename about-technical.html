@@ -4,7 +4,11 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145678990-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'UA-145678990-1');
@@ -23,9 +27,9 @@
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
-<body>
+<body id="mainabout">
 <!-- navbar -->
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+<nav class="navbar navbar-expand-sm sticky-top">
     <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -55,7 +59,6 @@
             </li>
         </ul>
     </div>
-
 </nav>
 <!-- page container -->
 <div class="container-fluid p-0 aboutcontainer">
@@ -70,19 +73,16 @@
                         <h1 id="carousel-h1">About Us</h1>
                         <!-- carousel images -->
 
+                        <div class="carousel-item">
+                            <img src="assets/abouttechcarousel1.png" class="d-block w-100" alt="...">
+                        </div>
+
                         <div class="carousel-item active">
-                            <img src="http://wowslider.com/sliders/demo-18/data1/images/shanghai.jpg"
-                                 class="d-block w-100" alt="...">
+                            <img src="assets/abouttechcarousel2.png" class="d-block w-100" alt="...">
                         </div>
 
                         <div class="carousel-item">
-                            <img src="http://wowslider.com/sliders/demo-18/data1/images/shanghai.jpg"
-                                 class="d-block w-100" alt="...">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="http://wowslider.com/sliders/demo-18/data1/images/shanghai.jpg"
-                                 class="d-block w-100" alt="...">
+                            <img src="assets/abouttechcarousel3.png" class="d-block w-100" alt="...">
                         </div>
                     </div>
                     <!-- carousel controls -->
@@ -100,13 +100,15 @@
         </section>
     </header>
     <!-- main section consisting of 3 rows with two columns (one figure and one text section) each -->
-    <main id="mainabout">
-        <section class="row about-row justify-content-around">
-            <figure class="col-md about-image">
+    <main>
+        <section class="row about-row-t justify-content-around h-100">
+            <figure class="col-md-6 about-image my-auto">
                 <!-- video -->
-                <iframe src="https://www.youtube.com/embed/JzB7yS9t1YE" width="420" height="315"></iframe>
+                <div class="youtube-container">
+                    <iframe id="youtubeembed" src="https://www.youtube.com/embed/JzB7yS9t1YE"></iframe>
+                </div>
             </figure>
-            <article class="col-md main-text-box">
+            <article class="col-md-6 main-text-box-t my-auto">
                 <h2 class="about-t-h2">Lorem Ipsum</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in elit et neque dapibus dictum et ut
                     sem.
@@ -123,11 +125,11 @@
             </article>
         </section>
 
-        <section class="row flex-row-reverse about-row justify-content-around">
-            <figure class="col-md about-image">
-                <img src="assets/robotpointingleft.png" alt="image 2">
+        <section class="row flex-row-reverse about-row-t justify-content-around h-100">
+            <figure class="col-md-6 about-image my-auto">
+                <img class="img-fluid" src="assets/abouttechnicalpicture1.png" alt="robot 1">
             </figure>
-            <article class="col-md main-text-box">
+            <article class="col-md-6 main-text-box-t my-auto">
                 <h2 class="about-t-h2">Lorem Ipsum</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in elit et neque dapibus dictum et ut
                     sem.
@@ -144,11 +146,11 @@
             </article>
         </section>
 
-        <section class="row about-row justify-content-around">
-            <figure class="col-md about-image">
-                <img src="assets/robotpointingright.png" alt="image 3">
+        <section class="row about-row-t justify-content-around h-100">
+            <figure class="col-md-6 about-image my-auto">
+                <img class="img-fluid" src="assets/abouttechnicalpicture2.png" alt="robot 2">
             </figure>
-            <article class="col-md main-text-box">
+            <article class="col-md-6 main-text-box-t my-auto">
                 <h2 class="about-t-h2">Lorem Ipsum</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in elit et neque dapibus dictum et ut
                     sem.
@@ -167,9 +169,6 @@
     </main>
     <!-- footer with audio and links -->
     <footer>
-        <audio controls>
-            <source src="https://www.youtube.com/watch?v=SUkUjsr1FqM" type="audio">
-        </audio>
         <div class="footer-copyright text-center">© 2019 Copyright:
             <a href="#">chip.com</a>
         </div>
@@ -182,8 +181,34 @@
             <a href="#" class="fa fa-linkedin"></a>
             <a href="#" class="fa fa-instagram"></a>
         </div>
+        <audio controls autoplay>
+            <source src="assets/The%20Things%20That%20Keep%20Us%20Here%20%20Scott%20Buckley%20%5BVlog%20No%20Copyright%20Music%5D.mp3"
+                    type="audio/mp3">
+        </audio>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     </footer>
 </div>
+<!-- back to top button-->
+<script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
+</script>
+<!-- back to top button END-->
 <!--bootstrap js -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
