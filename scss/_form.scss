@@ -31,17 +31,14 @@ body {
   background-attachment: fixed;
 }
 
-.banners {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-}
 
 #funding { padding-bottom: 40px;
+  background-color: $white;
 }
 
 #crowdfunding {
   width: 100%;
-  background-color: rgba(246, 246, 246, 0.7);
+  background-color: $white;
   margin-bottom: 100px;
 }
 
@@ -49,7 +46,7 @@ body {
   margin: 0 auto;
   margin-top: 8px;
   padding: 20px 10px;
-  background-color: lightgray;
+  background-color: $white;
 }
 
 .bigtitle {
@@ -62,7 +59,7 @@ body {
 .kolom {
   margin: 0 auto;
   padding: 20px 40px;
-  background-color: rgba(246, 246, 246, 0.5);
+  background-color: $white;
   .hptop, .h3top {
     text-align: right;
     max-width: 660px;
@@ -91,21 +88,18 @@ body {
 
 .left-foto {
   margin-left: 100px;
-  height: 100%;
 }
 
 .right-foto {
-  margin-left: 255px;
-  height: 100%;
+  margin-left: 5px;
 }
 
 #theform {
-  background-image: url("../assets/theback2.jpg");
+  background-color: $white;
   background-position-x: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 40px 0;
-  border-top: 3px solid $basecolor;
 }
 
 .hrhrhr {
@@ -163,7 +157,7 @@ body {
 
     .p1form {
       font-weight: lighter;
-      color: $h1color;
+      color: $basecolor;
       padding: 12%;
       margin-top: 4px;
     }
@@ -171,10 +165,6 @@ body {
 
   .register-right {
     background: $white;
-    border-top-left-radius: 20% 50%;
-    border-top-right-radius: 8% 50%;
-    border-bottom-left-radius: 20% 50%;
-    border-bottom-right-radius: 8% 50%;
   }
 
   #signin {
@@ -198,43 +188,46 @@ body {
     margin-left: 80px;
   }
 
+  .nav-link {
+    border-radius: 0px;
+  }
+
+  .nav-link:active {
+    background-color: $buttonactive;
+  }
+
   #myTab {
     margin-top: 3%;
     background: $button;
-    border-radius: 1.5rem;
     width: 32%;
     float: right;
+    border: none;
 
     #home-tab, #profile-tab {
       padding: 6px 10px 10px 10px;
       height: 40px;
       font-weight: 900;
-      color: #8C7468;
+      color: $h1color;
       text-shadow: 1px 1px 1px black;
-      border-top-right-radius: 1.5rem;
-      border-bottom-right-radius: 1.5rem;
+      border: none;
     }
 
     #home-tab:hover {
       background: $buttonhover;
-      border-top-left-radius: 1.5rem;
-      border-bottom-left-radius: 1.5rem;
+
     }
 
     #profile-tab:hover {
       background: $buttonhover;
-      border: 2px solid #116e11;
-      border-top-left-radius: 1.5rem;
-      border-bottom-left-radius: 1.5rem;
+
+
     }
 
     .nav-link.active {
       width: 132px;
-      color: #8C7468;
+      color: $h1color;
       text-shadow: 1px 1px 1px black;
-      border: 3px solid$buttonhover;
-      border-top-left-radius: 1.5rem;
-      border-bottom-left-radius: 1.5rem;
+      border: none;
     }
   }
 
@@ -249,11 +242,9 @@ body {
     float: right;
     margin-top: 4%;
     margin-left: -60px;
-    border: 2px solid $basecolor;
-    border-radius: 2px;
     padding: 6px 16px 8px 16px;
-    background: #116e11;
-    color: #453829;
+    background: $button;
+    color: $otherh;
     text-shadow: 1px 1px 2px whitesmoke;
     font-weight: 600;
     width: 160px;
@@ -273,17 +264,17 @@ body {
 .form2 {
   padding: 50px 100px 0 100px;
   margin-bottom: 50px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   min-height: 640px;
   .dark {
-    background-color: #f6f6f6;
+    background-color: $white;
     .block-heading p {
       opacity: 0.8;
     }
   }
   .content {
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.75);
-    background-color: white;
+    background-color: $white;
   }
   .block-heading {
     padding-top: 60px;
@@ -297,9 +288,8 @@ body {
     }
   }
   .form2 {
-    border-top: 2px solid $basecolor;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
-    background-color: #ffffff;
+    background-color: $white;
     max-width: 600px;
     margin: auto;
   }
@@ -322,8 +312,6 @@ body {
     font-weight: 600;
     margin-top: 75px;
     margin-left: 475px;
-    border: 2px solid #312F30;
-    border-radius: 2px;
     padding: 6px 26px 8px 26px;
     background: $button;
     color: $otherh;
