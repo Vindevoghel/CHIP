@@ -25,7 +25,7 @@
 <body>
 
 <!-- Here starts the navbar !-->
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+<nav class="navbar navbar-expand-sm sticky-top">
     <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -75,17 +75,16 @@
 
     <div class="grid-container" id="funding">
         <div id="crowdfunding">
-            <hr class="hrhrhr">
 
             <div class="row py-2 px-2">
-                <div class="col-sm my-4 p-4 border rounded">
+                <div class="col-sm my-4 p-2 hoofding7">
                     <h1 class="bigtitle">What could you do for us?</h1>
                 </div>
             </div>
 
             <div class="row py-2 px-2">
-                <div class="col-sm main-text pl-5 pt-5 mt-4 kolom">
-                    <h3 class="h3top mt-4">Support our project</h3><br>
+                <div class="col-sm main-text 2 pt-4 mt-4 kolom">
+                    <h3 class="h3top mt-1">Support our project</h3><br>
                     <h5 class="hptop pt-2">
                         We are a small company, with big plans!<br>
                         But we need your help to reach our goals!
@@ -101,11 +100,6 @@
                         Animi assumenda consequuntur deserunt dignissimos distinctio,
                         eaque exercitationem illum inventore iste labore magni, odio
                         provident qui sapiente sed totam ullam, voluptatem voluptatum!
-                        <br><br>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Animi assumenda consequuntur deserunt dignissimos distinctio,
-                        eaque exercitationem illum inventore iste labore magni, odio
-                        provident qui sapiente sed totam ullam, voluptatem voluptatum!
                     </p>
 
                 </div>
@@ -114,12 +108,12 @@
                 </div>
             </div>
 
-            <div class="row py-2 px-2 mt-1 tweederij">
+            <div class="row py-2 px-2 mt-5 tweederij">
                 <div class="col-sm">
                     <img class="right-foto align-items-sm-end mt-2" src="assets/bot-boxes-big.jpg" alt="" height="500" width="550" />
                 </div>
-                <div class="col-sm main-text text-sm-right pr-5 pt-5 mt-2 kolom">
-                    <h3 class="h3bottom mt-4">Pre-order possible from august 2019!</h3>
+                <div class="col-sm main-text text-sm-right pr-2 pt-2 mt-2 kolom">
+                    <h3 class="h3bottom mt-1">Pre-order possible from august 2019!</h3>
                     <h5 class="hpbottom pt-2">
                         We are a small company, with big plans!<br>
                         But we need your help to reach our goals!
@@ -135,16 +129,11 @@
                         Animi assumenda consequuntur deserunt dignissimos distinctio,
                         eaque exercitationem illum inventore iste labore magni, odio
                         provident qui sapiente sed totam ullam, voluptatem voluptatum!
-                        <br><br>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Animi assumenda consequuntur deserunt dignissimos distinctio,
-                        eaque exercitationem illum inventore iste labore magni, odio
-                        provident qui sapiente sed totam ullam, voluptatem voluptatum!
                     </p>
                 </div>
             </div>
 
-            <hr class="hrhrhr">
+
         </div>
     </div>
 
@@ -321,13 +310,13 @@
     <ul>
         <li><a href="#">Privacy</a></li>
         <li><a href="#">Terms</a></li>
-        <li><a class="top" href="#" id="topbutton">Back to Top</a></li>
     </ul>
     <div class="icon">
         <a href="#" class="fa fa-facebook"></a>
         <a href="#" class="fa fa-linkedin"></a>
         <a href="#" class="fa fa-instagram"></a>
     </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 </footer>
 
 <!-- Optional JavaScript -->
@@ -341,6 +330,26 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+<!-- back to top button-->
+<script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+<!-- back to top button END-->
 
 
 </body>
