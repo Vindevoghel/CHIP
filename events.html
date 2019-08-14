@@ -1,6 +1,19 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145678990-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-145678990-1');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -10,7 +23,8 @@
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
     <link rel="icon" href="assets/robot-icon%2024px.png" type="image/x-icon"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca|Open+Sans&display=swap" rel="stylesheet">    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca|Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca|Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca|Open+Sans&display=swap" rel="stylesheet">
     <title>CHIP events</title>
 </head>
 <body>
@@ -92,11 +106,6 @@
     </div>   <!-- blank div for parallax -->
 
 
-
-
-
-
-
     <!-- Events google maps & calendar -->
 
     <div class="maps">
@@ -149,8 +158,8 @@
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
         // Output the result in an element with id="demo"
-        document.getElementById("demo").innerHTML = days + "days " +hours + "hours "
-            + minutes + "minutes " +seconds + "seconds ";
+        document.getElementById("demo").innerHTML = days + "days " + hours + "hours "
+            + minutes + "minutes " + seconds + "seconds ";
 
         // If the count down is over, write some text
         if (distance < 0) {
