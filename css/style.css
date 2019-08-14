@@ -212,7 +212,8 @@ body {
   width: 100%;
   margin: 0 auto;
   font-family: "Open Sans";
-  color: #312f30; }
+  color: #312f30;
+  overflow-x: hidden; }
 
 .spacebetween1 {
   height: 400px; }
@@ -290,9 +291,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 40px 0; }
-
-.hrhrhr {
-  margin: 20px 0; }
 
 .registo {
   background: linear-gradient(90deg, rgba(2, 31, 56, 0.7) 0%, rgba(49, 47, 48, 0.7) 30%, rgba(4, 52, 78, 0.8) 60%, rgba(0, 74, 48, 0.8) 100%);
