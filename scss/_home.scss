@@ -1,28 +1,3 @@
-.navbar{
-  background-color:$basecolor;
-  color:$h1color;
-}
-
-footer{
-  background-color:$basecolor;
-}
-h1{
-  color:$h1color;
-  font-family:'Lexend Deca',sans-serif;
-}
-h2{
-  color: $otherh;
-}
-h5{
-  color: $otherh;
-}
-
-.fa{
-  color: $button;
-}
-.fa:hover{
-  color:$buttonhover;
-}
 .btn{
 background-color: $button;
   color: white;
@@ -44,11 +19,62 @@ background-color: $button;
 .hero-text{
   text-align: center;
   padding-top: 150px;
+  h1{
+    font-size: 85px;
+  }
+  p{
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 30px;
+  }
+  a{
+    text-transform: uppercase;
+    padding: 10px 30px;
+    min-width: 50px;
+  }
 }
 .aboutsection{
   background-color: $white;
   padding-bottom: 300px;
+  .cardtech{
+    margin-top: 200px;
+    .card-body{
+      min-height: 300px;
+      .card-text{
+        min-height: 150px;
+      }
+    }
+    a{
+      padding: 10px 30px;
+      min-width: 200px;
+    }
+  }
+  .cardpeople{
+    margin-top:200px;
+    min-height: 800px;
+    .card-body{
+      min-height: 300px;
+      .card-text{
+        min-height: 150px;
+      }
+    }
+    a{
+      padding: 10px 30px;
+      min-width: 200px;
+    }
+  }
 }
+
+.cardtech:hover{
+  transform: scale(1.1);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.cardpeople:hover{
+  transform: scale(1.1);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+
 .eventsection{
   background-color: $white;
   padding-bottom: 100px;
@@ -61,30 +87,11 @@ background-color: $button;
     margin-top: 100px;
     min-height: 300px;
   }
-}
-
-.cardtech{
-  margin-top: 200px;
-  .card-body{
-    min-height: 300px;
-  }
-}
-.cardpeople{
-  margin-top:200px;
-  min-height: 800px;
-  .card-body{
-    min-height: 300px;
+  a{
+    padding:10px 30px;
   }
 }
 
-.cardtech:hover{
-    transform: scale(1.1);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  }
-.cardpeople:hover{
-  transform: scale(1.1);
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-}
 .parallax-home{
   padding:0;
   background-image: url("../assets/adult-artificial-intelligence-bot-1020325.jpg");
@@ -95,44 +102,5 @@ background-color: $button;
 }
 .parallax-event{
   height: 200px;
-}
-footer{
-  background-color: #1b1e21;
-  color: white;
-  position: relative;
-}
-footer ul {
-  text-decoration: none;
-  width: 100%;
-}
-
-footer ul li {
-  display: inline-block;
-  padding: 10px;
-}
-footer ul li .top{
-  position:absolute;
-  right: 50px;
-
-}
-.icon{
-  display: flex;
-  justify-content: center;
-  padding-bottom: 10px;
-  font-size: 30px;
-  text-decoration: none;
-  border-radius: 50%;
-}
-.icon .fa{
-  margin-left: 10px;
-  margin-right: 20px
-}
-
-.icon a{
-text-decoration: none;
-}
-
-audio{
-  background-color: #312F30;
 }
 

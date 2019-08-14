@@ -1,35 +1,109 @@
 /* algemene style sheet waarin de partials in komen*/
 
+
+/*--------------------------------------------Variables*/
 $button: #116e11;
 $buttonhover: #00676f;
 $buttonactive: #04344e;
 $h1color: #8C7468;
 $otherh: #453829;
-$basecolor: #312F30;
+$basecolor: rgb(49, 47, 48);
 $white: rgba(246, 246, 246, 0.7);
 
+
+/*----------------------------------------General color and font*/
 *{
   font-family:'Open Sans', sans-serif;
   color:$basecolor;
 }
 
+
+/*--------------------------------------------Heading lay-out*/
 h1{
   font-family:'Lexend Deca', sans-serif;
+  color:$h1color;
 }
 h2{
   font-family: 'Lexend Deca',sans-serif;
+  color: $otherh;
 }
 
 h3{
   font-family: 'Lexend Deca',sans-serif;
+  color: $otherh;
 }
-
 h4{
   font-family: 'Lexend Deca',sans-serif;
+  color: $otherh;
 }
 h5{
   font-family: 'Lexend Deca',sans-serif;
+  color: $otherh
 }
+
+/*----------------------------------------------Navbar lay-out*/
+.navbar{
+  background-color:$basecolor;
+  ul li a{
+    color:whitesmoke;
+  }
+}
+.dropdown-menu{
+  background-color:$basecolor;
+}
+
+/*---------------------Footer lay-out*/
+
+footer{
+  background-color:$basecolor;
+  .fa{
+    color: $button;
+  }
+  .fa:hover{
+    color:$buttonhover;
+  }
+  color: white;
+  position: relative;
+  .footer-copyright{
+    color:ghostwhite;
+    a{
+      color: $button;
+    }
+  }
+  ul {
+    text-decoration: none;
+    width: 100%;
+    li {
+      display: inline-block;
+      padding: 10px;
+      a{
+        color: $h1color;
+      }
+      .top{
+        position:absolute;
+        right: 50px;}
+    }
+  }
+}
+/*-----------------------------Icon lay-out*/
+
+.icon {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+  font-size: 30px;
+  text-decoration: none;
+  border-radius: 50%;
+  .fa{
+    margin-left: 10px;
+    margin-right: 20px
+  }
+  a{
+    text-decoration: none;
+  }
+}
+
+/* --------------------------------Partials*/
 
 @import "home";
 @import "about-technical";
