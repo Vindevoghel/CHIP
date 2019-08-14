@@ -10,7 +10,7 @@ body {
 }
 
 .spacebetween2 {
-  height: 310px;
+  height: 210px;
 }
 
 .midsection1 {
@@ -34,12 +34,13 @@ body {
 
 #funding { padding-bottom: 40px;
   background-color: $white;
+  margin-bottom: 100px;
 }
 
 #crowdfunding {
   width: 100%;
   background-color: $white;
-  margin-bottom: 100px;
+  margin-bottom: -40px;
 }
 
 .kolomhoofd {
@@ -60,28 +61,24 @@ body {
 
 .kolom {
   margin: 0 auto;
-  padding: 20px 40px;
   background-color: $white;
   .hptop, .h3top {
     text-align: right;
-    max-width: 660px;
-    margin-left: 160px;
-    margin-top: 8px;
   }
   .hpbottom, .h3bottom {
     text-align: left;
-    max-width: 660px;
-    margin-left: 90px;
-    margin-top: 8px;
   }
   .bigtitle, .hptop, .hpbottom {
     font-family: "Lexend Deca";
     .h3top, .h3bottom {
       color: $otherh;
-      margin-top: 40px;
-      padding-top: 20px;
+      margin-top: -20px;
     }
   }
+}
+
+.main-text {
+  padding: 5px 10px;
 }
 
 .tweederij {

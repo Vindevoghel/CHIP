@@ -218,7 +218,7 @@ body {
   height: 400px; }
 
 .spacebetween2 {
-  height: 310px; }
+  height: 210px; }
 
 .midsection1 {
   background-image: url("../assets/theback1.jpg");
@@ -238,12 +238,13 @@ body {
 
 #funding {
   padding-bottom: 40px;
-  background-color: rgba(246, 246, 246, 0.7); }
+  background-color: rgba(246, 246, 246, 0.7);
+  margin-bottom: 100px; }
 
 #crowdfunding {
   width: 100%;
   background-color: rgba(246, 246, 246, 0.7);
-  margin-bottom: 100px; }
+  margin-bottom: -40px; }
 
 .kolomhoofd {
   margin: 0 auto;
@@ -260,24 +261,19 @@ body {
 
 .kolom {
   margin: 0 auto;
-  padding: 20px 40px;
   background-color: rgba(246, 246, 246, 0.7); }
   .kolom .hptop, .kolom .h3top {
-    text-align: right;
-    max-width: 660px;
-    margin-left: 160px;
-    margin-top: 8px; }
+    text-align: right; }
   .kolom .hpbottom, .kolom .h3bottom {
-    text-align: left;
-    max-width: 660px;
-    margin-left: 90px;
-    margin-top: 8px; }
+    text-align: left; }
   .kolom .bigtitle, .kolom .hptop, .kolom .hpbottom {
     font-family: "Lexend Deca"; }
     .kolom .bigtitle .h3top, .kolom .bigtitle .h3bottom, .kolom .hptop .h3top, .kolom .hptop .h3bottom, .kolom .hpbottom .h3top, .kolom .hpbottom .h3bottom {
       color: #453829;
-      margin-top: 40px;
-      padding-top: 20px; }
+      margin-top: -20px; }
+
+.main-text {
+  padding: 5px 10px; }
 
 .tweederij {
   height: 600px; }
