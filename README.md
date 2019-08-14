@@ -1,7 +1,44 @@
 # CHIP
 
+### The creators
+> Kevin
+>
+>Yannick
+>
+>Walid
+>
+>Anastasiya
+>
+>Jeroen
+
+**Visit our site for more info!**
+
 https://jeroen-editing.github.io/CHIP/
 
+*But if you don't like clicking, here's some more info:*
+
+### What will you find in this repo?
+
+*No money, sorry*
+
+But, you will find our very first coding project, that looks pretty descent!
+For our assignment at Becode we had to create a website in HTML/CSS only.
+For this, we also invented a product, called CHIP
+
+### Why?
+
+*The coach made us do it*
+
+But also to showcase are developing skills.
+
+### About the product
+
+We also invented a cool AI software program, designed to support people in their personal development. 
+Just like a life coach.
+
+#### Product presentation
+
+![CHIP](/assets/adult-artificial-intelligence-bot-1020325.jpg)
 
 Hey, meet CHIP!
 
