@@ -1,37 +1,80 @@
 /* algemene style sheet waarin de partials in komen*/
+/*--------------------------------------------Variables*/
+/*----------------------------------------General color and font*/
 * {
   font-family: 'Open Sans', sans-serif;
-  color: #312F30; }
+  color: #312f30; }
 
+/*--------------------------------------------Heading lay-out*/
 h1 {
-  font-family: 'Lexend Deca', sans-serif; }
-
-h2 {
-  font-family: 'Lexend Deca',sans-serif; }
-
-h3 {
-  font-family: 'Lexend Deca',sans-serif; }
-
-h4 {
-  font-family: 'Lexend Deca',sans-serif; }
-
-h5 {
-  font-family: 'Lexend Deca',sans-serif; }
-
-.navbar {
-  background-color: #312F30;
+  font-family: 'Lexend Deca', sans-serif;
   color: #8C7468; }
 
-h1 {
-  color: #8C7468;
-  font-family: 'Lexend Deca',sans-serif; }
-
 h2 {
+  font-family: 'Lexend Deca',sans-serif;
+  color: #453829; }
+
+h3 {
+  font-family: 'Lexend Deca',sans-serif;
+  color: #453829; }
+
+h4 {
+  font-family: 'Lexend Deca',sans-serif;
   color: #453829; }
 
 h5 {
+  font-family: 'Lexend Deca',sans-serif;
   color: #453829; }
 
+/*----------------------------------------------Navbar lay-out*/
+.navbar {
+  background-color: #312f30; }
+  .navbar ul li a {
+    color: whitesmoke; }
+
+.dropdown-menu {
+  background-color: #312f30; }
+
+/*---------------------Footer lay-out*/
+footer {
+  background-color: #312f30;
+  color: white;
+  position: relative; }
+  footer .fa {
+    color: #116e11; }
+  footer .fa:hover {
+    color: #00676f; }
+  footer .footer-copyright {
+    color: ghostwhite; }
+    footer .footer-copyright a {
+      color: #116e11; }
+  footer ul {
+    text-decoration: none;
+    width: 100%; }
+    footer ul li {
+      display: inline-block;
+      padding: 10px; }
+      footer ul li a {
+        color: #8C7468; }
+      footer ul li .top {
+        position: absolute;
+        right: 50px; }
+
+/*-----------------------------Icon lay-out*/
+.icon {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+  font-size: 30px;
+  text-decoration: none;
+  border-radius: 50%; }
+  .icon .fa {
+    margin-left: 10px;
+    margin-right: 20px; }
+  .icon a {
+    text-decoration: none; }
+
+/* --------------------------------Partials*/
 .btn {
   background-color: #116e11;
   color: white;
@@ -52,6 +95,16 @@ h5 {
 .hero-text {
   text-align: center;
   padding-top: 150px; }
+  .hero-text h1 {
+    font-size: 85px; }
+  .hero-text p {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 30px; }
+  .hero-text a {
+    text-transform: uppercase;
+    padding: 10px 30px;
+    min-width: 50px; }
 
 .aboutsection {
   background-color: rgba(246, 246, 246, 0.7);
@@ -60,11 +113,21 @@ h5 {
     margin-top: 200px; }
     .aboutsection .cardtech .card-body {
       min-height: 300px; }
+      .aboutsection .cardtech .card-body .card-text {
+        min-height: 150px; }
+    .aboutsection .cardtech a {
+      padding: 10px 30px;
+      min-width: 200px; }
   .aboutsection .cardpeople {
     margin-top: 200px;
     min-height: 800px; }
     .aboutsection .cardpeople .card-body {
       min-height: 300px; }
+      .aboutsection .cardpeople .card-body .card-text {
+        min-height: 150px; }
+    .aboutsection .cardpeople a {
+      padding: 10px 30px;
+      min-width: 200px; }
 
 .cardtech:hover {
   transform: scale(1.1);
@@ -84,6 +147,8 @@ h5 {
     text-align: center;
     margin-top: 100px;
     min-height: 300px; }
+  .eventsection a {
+    padding: 10px 30px; }
 
 .parallax-home {
   padding: 0;
@@ -95,39 +160,6 @@ h5 {
 
 .parallax-event {
   height: 200px; }
-
-footer {
-  background-color: #312F30;
-  color: white;
-  position: relative; }
-  footer .fa {
-    color: #116e11; }
-  footer .fa:hover {
-    color: #00676f; }
-  footer .footer-copyright {
-    color: #116e11; }
-  footer ul {
-    text-decoration: none;
-    width: 100%; }
-    footer ul li {
-      display: inline-block;
-      padding: 10px; }
-      footer ul li .top {
-        position: absolute;
-        right: 50px; }
-
-.icon {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 10px;
-  font-size: 30px;
-  text-decoration: none;
-  border-radius: 50%; }
-  .icon .fa {
-    margin-left: 10px;
-    margin-right: 20px; }
-  .icon a {
-    text-decoration: none; }
 
 /* positions h1 in center of carousel */
 #carouseldiv {
@@ -201,10 +233,19 @@ footer {
 .parafree {
   height: 450px; }
 
+.parafreetop {
+  position: relative !important;
+  overflow: hidden !important;
+  display: block; }
+
 #demo {
   font-size: 50px;
   text-align: center;
-  color: white; }
+  color: white;
+  margin-top: 6rem;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto; }
 
 .timer {
   color: white;
