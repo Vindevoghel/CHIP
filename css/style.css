@@ -214,10 +214,19 @@ audio {
 .parafree {
   height: 450px; }
 
+.parafreetop {
+  position: relative !important;
+  overflow: hidden !important;
+  display: block; }
+
 #demo {
   font-size: 50px;
   text-align: center;
-  color: white; }
+  color: white;
+  margin-top: 6rem;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto; }
 
 .timer {
   color: white;
