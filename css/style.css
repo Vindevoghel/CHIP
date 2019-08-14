@@ -178,22 +178,19 @@ footer {
   overflow: hidden; }
 
 /*adds margins to about page text-boxes and images */
-.main-text-box {
-  background-color: white; }
-
 .about-image {
   max-width: 320px; }
 
-.about-row {
-  background-color: rgba(246, 246, 246, 0.2);
+.about-row-t {
+  background-color: rgba(105, 105, 105, 0.2);
   min-height: 300px;
-  margin: 50px;
-  padding: 20px; }
+  margin: 50px auto;
+  padding: 20px auto; }
 
 /* adds background to about tech */
 #mainabout {
-  background: -webkit-linear-gradient(-180deg, #464646, black);
-  background: linear-gradient(-180deg, #464646, black); }
+  background: -webkit-radial-gradient(#ededed, #cad2d9);
+  background: radial-gradient(#ededed, #cad2d9); }
 
 /*makes youtube responsive*/
 .youtube-container {
@@ -203,6 +200,7 @@ footer {
   height: 0;
   overflow: hidden; }
 
+test
 #youtubeembed {
   position: absolute;
   top: 0;
@@ -256,7 +254,9 @@ body {
 .bigtitle {
   font-size: 40px;
   letter-spacing: 2px;
-  text-align: center; }
+  text-align: center;
+  background-color: rgba(246, 246, 246, 0.7);
+  padding: 22px 0; }
 
 .kolom {
   margin: 0 auto;
@@ -293,12 +293,7 @@ body {
   background-position-x: center;
   background-repeat: no-repeat;
   background-size: cover;
-<<<<<<< HEAD
   padding: 40px 0; }
-=======
-  padding: 40px 0;
-  border-top: 3px solid #312f30; }
->>>>>>> 73524309e73a80ec415f132de2cdfdb68e09b121
 
 .hrhrhr {
   margin: 20px 0; }
@@ -390,11 +385,6 @@ body {
     float: right;
     margin-top: 4%;
     margin-left: -60px;
-<<<<<<< HEAD
-=======
-    border: 2px solid #312f30;
-    border-radius: 2px;
->>>>>>> 73524309e73a80ec415f132de2cdfdb68e09b121
     padding: 6px 16px 8px 16px;
     background: #116e11;
     color: #453829;
@@ -429,10 +419,6 @@ body {
       margin: auto;
       opacity: 0.7; }
   .form2 .form2 {
-<<<<<<< HEAD
-=======
-    border-top: 2px solid #312f30;
->>>>>>> 73524309e73a80ec415f132de2cdfdb68e09b121
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
     background-color: rgba(246, 246, 246, 0.7);
     max-width: 600px;
@@ -493,15 +479,20 @@ body {
   overflow: hidden; }
 
 /*adds margins to about page text-boxes and images */
-.main-text-box {
-  max-width: 600px;
-  background-color: grey; }
-
 .about-image {
   max-width: 300px; }
 
+.bg-warning {
+  background-color: #8C7468; }
+
 .about-row {
   margin: 50px 50px; }
+
+#mainabout1 {
+  opacity: 0.8; }
+
+.abt {
+  background-color: grey; }
 
 .container-fluid-events {
   padding: 0;
