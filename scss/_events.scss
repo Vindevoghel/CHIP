@@ -2,8 +2,7 @@
 }
 
 
-
-.container-fluid-events{
+.container-fluid-events {
   padding: 0;
   background-image: url("../assets/boy-child-childhood-346796.jpg");
   background-attachment: fixed;
@@ -13,22 +12,21 @@
 }
 
 
-
-.parallaxevents{
+.parallaxevents {
   height: auto;
 }
 
-.parafree{
+.parafree {
   height: 450px;
 }
 
-.parafreetop{
-  position: relative!important;
-  overflow: hidden!important;
+.parafreetop {
+  position: relative !important;
+  overflow: hidden !important;
   display: block;
 }
 
-#demo{
+#demo {
   font-size: 50px;
   font-weight: bolder;
   text-align: center;
@@ -38,28 +36,31 @@
   margin-right: auto;
 }
 
-.timer{
+.timer {
   color: white;
   height: auto;
 }
-.maps{
+
+.maps {
   height: 400px;
 }
-.footerstuff{
+
+.footerstuff {
   height: 50px;
 }
 
-.map-responsive{
-  overflow:hidden;
-  position:relative;
-  height:400px;
+.map-responsive {
+  overflow: hidden;
+  position: relative;
+  height: 400px;
 }
-.map-responsive iframe{
-  left:0;
-  top:0;
-  height:100%;
-  width:100%;
-  position:absolute;
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 #myBtn {
@@ -83,52 +84,25 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-span{
-  font-size:15px;
-}
-.box{
-  padding:60px 0px;
+span {
+  font-size: 15px;
 }
 
-.box-part{
-  background:#FFF;
-  border-radius:0;
-  padding:60px 10px;
-  margin:30px 0px;
-}
-.text{
-  margin:20px 0px;
+.box {
+  padding: 60px 0px;
 }
 
-.fa{
-  color:#4183D7;
+.box-part {
+  background: #FFF;
+  border-radius: 0;
+  padding: 60px 10px;
+  margin: 30px 0px;
+}
+
+.text {
+  margin: 20px 0px;
+}
+
+.fa {
+  color: #4183D7;
 }
