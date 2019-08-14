@@ -3,6 +3,21 @@
   font-family: 'Open Sans', sans-serif;
   color: #312F30; }
 
+h1 {
+  font-family: 'Lexend Deca', sans-serif; }
+
+h2 {
+  font-family: 'Lexend Deca',sans-serif; }
+
+h3 {
+  font-family: 'Lexend Deca',sans-serif; }
+
+h4 {
+  font-family: 'Lexend Deca',sans-serif; }
+
+h5 {
+  font-family: 'Lexend Deca',sans-serif; }
+
 .navbar {
   background-color: #312F30; }
 
@@ -10,7 +25,8 @@ footer {
   background-color: #312F30; }
 
 h1 {
-  color: #8C7468; }
+  color: #8C7468;
+  font-family: 'Lexend Deca',sans-serif; }
 
 h2 {
   color: #453829; }

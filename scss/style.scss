@@ -1,6 +1,5 @@
 /* algemene style sheet waarin de partials in komen*/
 
-$heading:'Lexend Deca', sans-serif;
 $button: #116e11;
 $buttonhover: #00676f;
 $buttonactive: #04344e;
@@ -10,8 +9,26 @@ $basecolor: #312F30;
 $white: rgba(246, 246, 246, 0.7);
 
 *{
-  font-family: 'Open Sans', sans-serif;
+  font-family:'Open Sans', sans-serif;
   color:$basecolor;
+}
+
+h1{
+  font-family:'Lexend Deca', sans-serif;
+}
+h2{
+  font-family: 'Lexend Deca',sans-serif;
+}
+
+h3{
+  font-family: 'Lexend Deca',sans-serif;
+}
+
+h4{
+  font-family: 'Lexend Deca',sans-serif;
+}
+h5{
+  font-family: 'Lexend Deca',sans-serif;
 }
 
 @import "home";
