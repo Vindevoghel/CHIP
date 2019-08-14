@@ -487,6 +487,9 @@ body {
 .txt {
   background-color: rgba(211, 211, 211, 0.7); }
 
+.img-fluid {
+  padding-top: 20px; }
+
 .container-fluid-events {
   padding: 0;
   background-image: url("../assets/boy-child-childhood-346796.jpg");
