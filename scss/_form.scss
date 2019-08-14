@@ -1,0 +1,362 @@
+body {
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Open Sans";
+  color: $basecolor;
+}
+
+.spacebetween1 {
+  height: 400px;
+}
+
+.spacebetween2 {
+  height: 310px;
+}
+
+.midsection1 {
+  background-image: url("../assets/theback1.jpg");
+  background-position-x: center;
+  background-position-y: 90px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.midsection2 {
+  background-image: url("../assets/theback3.jpg");
+  background-position-x: center;
+  background-position-y: 1089px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.banners {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+#funding { padding-bottom: 40px;
+}
+
+#crowdfunding {
+  width: 100%;
+  background-color: rgba(246, 246, 246, 0.7);
+  margin-bottom: 100px;
+}
+
+.kolomhoofd {
+  margin: 0 auto;
+  margin-top: 8px;
+  padding: 20px 10px;
+  background-color: lightgray;
+}
+
+.bigtitle {
+  font-size: 40px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+
+.kolom {
+  margin: 0 auto;
+  padding: 20px 40px;
+  background-color: rgba(246, 246, 246, 0.5);
+  .hptop, .h3top {
+    text-align: right;
+    max-width: 660px;
+    margin-left: 160px;
+    margin-top: 8px;
+  }
+  .hpbottom, .h3bottom {
+    text-align: left;
+    max-width: 660px;
+    margin-left: 90px;
+    margin-top: 8px;
+  }
+  .bigtitle, .hptop, .hpbottom {
+    font-family: "Lexend Deca";
+    .h3top, .h3bottom {
+      color: $otherh;
+      margin-top: 40px;
+      padding-top: 20px;
+    }
+  }
+}
+
+.tweederij {
+  height: 600px;
+}
+
+.left-foto {
+  margin-left: 100px;
+  height: 100%;
+}
+
+.right-foto {
+  margin-left: 255px;
+  height: 100%;
+}
+
+#theform {
+  background-image: url("../assets/theback2.jpg");
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px 0;
+  border-top: 3px solid $basecolor;
+}
+
+.hrhrhr {
+  margin: 20px 0
+}
+
+.registo {
+  background: linear-gradient(90deg,
+          rgba(2, 31, 56, 0.7) 0%,
+          rgba(49, 47, 48, 0.7) 30%,
+          rgba(4, 52, 78, 0.8) 60%,
+          rgba(0, 74, 48, 0.8) 100%);
+  margin-top: 3%;
+  padding: 3%;
+  min-width: 1200px;
+
+  #myTabContent, #profile {
+    min-height: 640px;
+  }
+
+  .register-left {
+    text-align: center;
+    color: $basecolor;
+    margin-top: 2%;
+
+    .myphone {
+      width: 160px;
+      padding: 6px 16px 8px 16px;
+      background: $button;
+      color: $otherh;
+      text-shadow: 1px 1px 2px whitesmoke;
+      cursor: pointer;
+      border: 2px solid #312F30;
+      border-radius: 2px;
+    }
+    .myphone:hover {
+      background-color: $buttonhover;
+    }
+
+    .botti {
+      margin-top: 4%;
+      margin-bottom: 30%;
+      width: 60%;
+      border-radius: 2px;
+
+    }
+
+    .h3form {
+      color: $otherh;
+      font-size: 28px;
+      font-weight: 900;
+      text-transform: capitalize;
+      margin-bottom: 10px;
+    }
+
+    .p1form {
+      font-weight: lighter;
+      color: $h1color;
+      padding: 12%;
+      margin-top: 4px;
+    }
+  }
+
+  .register-right {
+    background: $white;
+    border-top-left-radius: 20% 50%;
+    border-top-right-radius: 8% 50%;
+    border-bottom-left-radius: 20% 50%;
+    border-bottom-right-radius: 8% 50%;
+  }
+
+  #signin {
+    margin-top: 50px;
+
+    #h3top, #h5top {
+      margin-left: 100px;
+      margin-bottom: 12px;
+    }
+  }
+
+  .regi-partone, .regi-parttwo {
+    max-width: 646px;
+    margin-left: 80px;
+    margin-top: 6px;
+  }
+
+  .regi-partthree {
+    max-height: 80px;
+    max-width: 646px;
+    margin-left: 80px;
+  }
+
+  #myTab {
+    margin-top: 3%;
+    background: $button;
+    border-radius: 1.5rem;
+    width: 32%;
+    float: right;
+
+    #home-tab, #profile-tab {
+      padding: 6px 10px 10px 10px;
+      height: 40px;
+      font-weight: 900;
+      color: #8C7468;
+      text-shadow: 1px 1px 1px black;
+      border-top-right-radius: 1.5rem;
+      border-bottom-right-radius: 1.5rem;
+    }
+
+    #home-tab:hover {
+      background: $buttonhover;
+      border-top-left-radius: 1.5rem;
+      border-bottom-left-radius: 1.5rem;
+    }
+
+    #profile-tab:hover {
+      background: $buttonhover;
+      border: 2px solid #116e11;
+      border-top-left-radius: 1.5rem;
+      border-bottom-left-radius: 1.5rem;
+    }
+
+    .nav-link.active {
+      width: 132px;
+      color: #8C7468;
+      text-shadow: 1px 1px 1px black;
+      border: 3px solid$buttonhover;
+      border-top-left-radius: 1.5rem;
+      border-bottom-left-radius: 1.5rem;
+    }
+  }
+
+  .form-control {
+    min-width: 282px;
+  }
+
+  .maxl {
+    margin-left: 60px;
+  }
+  #btnRegister1, .reset {
+    float: right;
+    margin-top: 4%;
+    margin-left: -60px;
+    border: 2px solid $basecolor;
+    border-radius: 2px;
+    padding: 6px 16px 8px 16px;
+    background: #116e11;
+    color: #453829;
+    text-shadow: 1px 1px 2px whitesmoke;
+    font-weight: 600;
+    width: 160px;
+    cursor: pointer;
+  }
+
+  #btnRegister1:hover {
+    background: $buttonhover;
+  }
+  .reset:hover {
+    background: $buttonhover;
+  }
+
+}
+
+
+.form2 {
+  padding: 50px 100px 0 100px;
+  margin-bottom: 50px;
+  font-family: 'Montserrat', sans-serif;
+  min-height: 640px;
+  .dark {
+    background-color: #f6f6f6;
+    .block-heading p {
+      opacity: 0.8;
+    }
+  }
+  .content {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.75);
+    background-color: white;
+  }
+  .block-heading {
+    padding-top: 60px;
+    margin-bottom: 40px;
+    text-align: center;
+    .p1form {
+      text-align: center;
+      max-width: 420px;
+      margin: auto;
+      opacity: 0.7;
+    }
+  }
+  .form2 {
+    border-top: 2px solid $basecolor;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+    background-color: #ffffff;
+    max-width: 600px;
+    margin: auto;
+  }
+
+  label {
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    color: #79818a;
+    text-transform: uppercase;
+  }
+  .mailto {
+    margin-left: 220px;
+  }
+  .phonenr {
+    margin-left: 330px;
+  }
+  #btnRegister2 {
+    font-weight: 600;
+    margin-top: 75px;
+    margin-left: 475px;
+    border: 2px solid #312F30;
+    border-radius: 2px;
+    padding: 6px 26px 8px 26px;
+    background: $button;
+    color: $otherh;
+    text-shadow: 1px 1px 2px whitesmoke;
+    width: 150px;
+    cursor: pointer;
+  }
+}
+
+
+@media (min-width: 576px) {
+  .payment-form .title {
+    font-size: 1.2em;
+  }
+
+  .payment-form .products {
+    padding: 40px;
+  }
+
+  .payment-form .products .item-name {
+    font-size: 1em;
+  }
+
+  .payment-form .products .price {
+    font-size: 1em;
+  }
+
+  .payment-form .card-details {
+    padding: 40px 40px 30px;
+  }
+
+  .payment-form .card-details button {
+    margin-top: 2em;
+  }
+}
+
