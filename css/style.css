@@ -34,6 +34,9 @@ h2 {
 h5 {
   color: #453829; }
 
+.card-img-top {
+  max-width: 200px; }
+
 .fa {
   color: #116e11; }
 
