@@ -178,22 +178,19 @@ footer {
   overflow: hidden; }
 
 /*adds margins to about page text-boxes and images */
-.main-text-box {
-  background-color: white; }
-
 .about-image {
   max-width: 320px; }
 
-.about-row {
-  background-color: rgba(246, 246, 246, 0.2);
+.about-row-t {
+  background-color: rgba(105, 105, 105, 0.2);
   min-height: 300px;
-  margin: 50px;
-  padding: 20px; }
+  margin: 50px auto;
+  padding: 20px auto; }
 
 /* adds background to about tech */
 #mainabout {
-  background: -webkit-linear-gradient(-180deg, #464646, black);
-  background: linear-gradient(-180deg, #464646, black); }
+  background: -webkit-radial-gradient(#ededed, #cad2d9);
+  background: radial-gradient(#ededed, #cad2d9); }
 
 /*makes youtube responsive*/
 .youtube-container {
@@ -203,6 +200,7 @@ footer {
   height: 0;
   overflow: hidden; }
 
+test
 #youtubeembed {
   position: absolute;
   top: 0;
@@ -498,15 +496,20 @@ body {
   overflow: hidden; }
 
 /*adds margins to about page text-boxes and images */
-.main-text-box {
-  max-width: 600px;
-  background-color: grey; }
-
 .about-image {
   max-width: 300px; }
 
+.bg-warning {
+  background-color: #8C7468; }
+
 .about-row {
   margin: 50px 50px; }
+
+#mainabout1 {
+  opacity: 0.8; }
+
+.abt {
+  background-color: grey; }
 
 .container-fluid-events {
   padding: 0;
@@ -575,5 +578,23 @@ body {
 
 #myBtn:hover {
   background-color: #555; }
+
+span {
+  font-size: 15px; }
+
+.box {
+  padding: 60px 0px; }
+
+.box-part {
+  background: #FFF;
+  border-radius: 0;
+  padding: 60px 10px;
+  margin: 30px 0px; }
+
+.text {
+  margin: 20px 0px; }
+
+.fa {
+  color: #4183D7; }
 
 /*# sourceMappingURL=style.css.map */
