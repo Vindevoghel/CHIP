@@ -147,17 +147,18 @@
 <section class="ourform" id="theform">
 
 <!-- form nav -->
+    <form action="https://formspree.io/email@domain.tld" method="POST" name="becodeform">
     <div class="container register border border-dark registo">
         <div class="row">
             <div class="col-md-3 register-left">
                 <img class="botti" src="assets/botti-maxi.jpg" alt=""/>
                 <h3 class="h3form">Contact info:</h3>
-                <p class="p1form">
+                <a class="p1form">
                     Little street 22<br>
                     9999 Big town<br><br>
                     Phonenumber:<br>
                     +32 485 57 73 91<br><br>
-                    <button class="myphone">☎️</button>
+                    <a href=callto.//+32485577391" name="belleke"></a> <button class="myphone" type="submit">☎️</button></a>
                 </p>
             </div>
             <div class="col-md-9 register-right">
@@ -186,29 +187,29 @@
                                     <input type="text" class="form-control" placeholder="Last Name *" value="" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" class="form-control" placeholder="Password *" value="" />
+                                    <input type="password" name="password" class="form-control" placeholder="Password *" value="" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" class="form-control"  placeholder="Confirm Password *" value="" />
+                                    <input type="password" name=""class="form-control"  placeholder="Confirm Password *" value="" />
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Your Email *" value="" />
+                                    <input type="email" class="form-control" name="mailus" placeholder="Your Email *" value="" />
                                 </div>
                                 <div class="form-group">
                                     <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Your Phone *" value="" />
                                 </div>
                                 <div class="form-group">
                                     <select class="form-control">
-                                        <option class="hidden"  selected disabled>Please select your Sequrity Question</option>
+                                        <option class="hidden"  name="personal" selected disabled>Please select your Sequrity Question</option>
                                         <option>What is your Birthdate?</option>
                                         <option>What is Your old Phone Number</option>
                                         <option>What is your Pet Name?</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Enter Your Answer *" value="" />
+                                    <input type="text" name="id" class="form-control" placeholder="Enter Your Answer *" value="" />
                                 </div>
                             </div>
                         </div>
@@ -216,7 +217,7 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label for="">Why are you interested in our project?</label>
-                                    <textarea class="form-control" name="" id="" rows="6" placeholder="enter message"></textarea>
+                                    <textarea class="form-control" name="whyus" id="" rows="6" placeholder="enter message"></textarea>
                                 </div>
                             </div>
                         </div>
@@ -236,11 +237,12 @@
                                 </div>
                             </div>
                             <div class="col-md-4 submit">
-                                <input type="submit" class="btnRegister" id="btnRegister1" value="Register"/>
-                                <input class="reset" type="reset" name="" value="reset"/><br/>
+                                <input type="submit" name="sendus" class="btnRegister" id="btnRegister1" value="Register"/>
+                                <input class="reset" type="reset" name="doover" value="reset"/><br/>
                             </div>
                         </div>
                     </div>
+
 
 <!-- form part 2 -->
                     <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
@@ -255,29 +257,29 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <label>Name</label>
-                                        <input type="text" class="form-control aname" placeholder="Family Name *" value="" />
+                                        <input type="text" class="form-control" name="famname" placeholder="Family Name *" value="" />
                                     </div>
                                     <div class="col-md-6">
                                         <label>First Name</label>
-                                            <input type="text" class="form-control aname" placeholder="First Name *" value="" />
+                                            <input type="text" class="form-control" name="forname" placeholder="First Name *" value="" />
                                     </div>
                                 </div>
 
                                 <div class="row">
                                     <div class="col-md-6">
                                         <label for="address">Adress and Number</label>
-                                        <input id="address" type="text" class="form-control" placeholder="Street, number/box" value="">
+                                        <input id="address" type="text" name="address" class="form-control" placeholder="Street, number/box" value="">
                                     </div>
                                     <div class="col-md-6">
                                         <label for="city">Postcode and City</label>
-                                        <input id="city" type="text" class="form-control" placeholder="0000, Cityname" aria-label="Card Holder" aria-describedby="basic-addon1">
+                                        <input id="city" type="text" name="city" class="form-control" placeholder="0000, Cityname" aria-label="Card Holder" aria-describedby="basic-addon1">
                                     </div>
                                 </div>
 
                                 <div class="row">
                                     <div class="col-md-8 align-self-end mailto">
                                         <label for="mailto">Emailaddress</label>
-                                        <input id="mailto" type="email" class="form-control" placeholder="Email *" value="" />
+                                        <input id="mailto" type="email" name="mailme" class="form-control" placeholder="Email *" value="" />
                                     </div>
                                 </div>
                                 <div class="row">
@@ -288,7 +290,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <button type="button" class="btnRegister" id="btnRegister2">Proceed</button>
+                                        <button type="button" name="eventme" class="btnRegister" id="btnRegister2">Proceed</button>
                                     </div>
                                 </div>
                             </div>
@@ -298,12 +300,10 @@
             </div>
         </div>
     </div>
+    </form>
 </section>
 
 <footer>
-    <audio controls>
-        <source src="https://www.youtube.com/watch?v=SUkUjsr1FqM" type="audio">
-    </audio>
     <div class="footer-copyright text-center">© 2019 Copyright:
         <a href="#">chip.com</a>
     </div>
